@@ -15,8 +15,8 @@ ${UGII_CAM_TEMPLATE_PART_ENGLISH_DIR}solid_tool.prt
 ## ${UGII_CAM_TEMPLATE_PART_ENGLISH_DIR}robot.prt
 
 ##
-D:\NX Customized\Template\Capful.prt
-D:\NX Customized\Template\Capful-EDM.prt
+D:\CAP Customized\Template\Capful.prt
+D:\CAP Customized\Template\Capful-EDM.prt
 ${UGII_CAM_TEMPLATE_PART_METRIC_DIR}mill_planar.prt
 ${UGII_CAM_TEMPLATE_PART_METRIC_DIR}mill_contour.prt
 ${UGII_CAM_TEMPLATE_PART_METRIC_DIR}mill_multi-axis.prt

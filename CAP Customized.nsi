@@ -20,14 +20,14 @@ SetCompressor lzma
 !define MUI_WELCOMEFINISHPAGE_BITMAP "Icon\WizardImage3.bmp"
 
 ;修改标题
-!define MUI_WELCOMEPAGE_TITLE "\r\n   CAP Customized 安装向导"
+!define MUI_WELCOMEPAGE_TITLE "\r\n   CAP Customized v${PRODUCT_VERSION}"
 ;修改欢迎页面上的描述文字
 !define MUI_WELCOMEPAGE_TEXT  "\r\n    CAP Customized 是专属于 Capful 使用数控编程\r\n    模具设计的定制文件。\r\n\r\n    本软件主要进行了以下定制：\r\n\r\n    1.集成专属角色文件；\r\n    2.定制的加工模板、后处理文件；\r\n    3.定制星创设计&电极外挂正版，安装即可使用。\r\n\r\n　　$_CLICK"
 ; 欢迎页面
 !insertmacro MUI_PAGE_WELCOME
 
 ; 更新日志
-!define MUI_PAGE_HEADER_TEXT "CAP Customized V${PRODUCT_VERSION} 更新日志"
+!define MUI_PAGE_HEADER_TEXT "CAP Customized v${PRODUCT_VERSION} 更新日志"
 !define MUI_PAGE_HEADER_SUBTEXT " "
 !define MUI_LICENSEPAGE_TEXT_TOP "要更新日志的其余部分请滑动滚轮往下翻页。"
 !define MUI_LICENSEPAGE_TEXT_BOTTOM "点击 下一步(N) > 继续安装。"

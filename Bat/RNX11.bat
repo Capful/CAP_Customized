@@ -1,9 +1,9 @@
 @echo off
 rem 设置变量
-rem NX Customized 主目录
-set Capful=D:\NX Customized
+rem CAP Customized 主目录
+set Capful=D:\CAP Customized
 
-rem NX Customized 后处理目录
+rem CAP Customized 后处理目录
 set post=%Capful%\Postprocessor\
 
 rem 备份目录

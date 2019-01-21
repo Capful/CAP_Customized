@@ -1,12 +1,12 @@
 @echo off
 
-rem NX Customized 主目录
-set Capful=D:\NX Customized
+rem CAP Customized 主目录
+set Capful=D:\CAP Customized
 
-rem NX Customized 模板目录
+rem CAP Customized 模板目录
 set Template=%Capful%\Template\
 
-rem NX Customized 后处理目录
+rem CAP Customized 后处理目录
 set post=%Capful%\Postprocessor\
 
 rem 备份目录
