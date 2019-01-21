@@ -9,6 +9,8 @@
 
 SetCompressor lzma
 
+!include "FileFunc.nsh"
+
 ; ------ MUI 现代界面定义 (1.67 版本以上兼容) ------
 !include "MUI.nsh"
 !include "WinMessages.nsh"
@@ -118,14 +120,18 @@ SectionGroupEnd
 SectionGroup /e "设计模块" SEC_C
 
 Section "星创外挂" SEC_C1
-;  SectionIn 1 2
   SetOutPath "$INSTDIR\XcDesignCam"
-  File /r "XcDesignCam\*.*"
-; File /r "XcDesignCam\log\*.*"
+;  File /r "XcDesignCam\*.*"
+ File /r "XcDesignCam\log\*.*"
 ; 添加星创环境变量
   WriteRegExpandStr HKLM "SYSTEM\CurrentControlSet\Control\Session Manager\Environment" "UGII_USER_DIR" "$INSTDIR\XcDesignCam"
 ; 刷新环境变量
   SendMessage ${HWND_BROADCAST} ${WM_WININICHANGE} 0 "STR:Environment" /TIMEOUT=5000
+SectionEnd
+
+Section "燕秀CAD界面模板" SEC_C2
+  SetOutPath "$INSTDIR\CAD YanXiu"
+  File "CAD YanXiu\*.*"
 SectionEnd
 
 SectionGroupEnd
@@ -135,17 +141,21 @@ SectionGroupEnd
 !insertmacro MUI_DESCRIPTION_TEXT ${SEC_A1} "Bat 批处理文件，执行相关配置"
 !insertmacro MUI_DESCRIPTION_TEXT ${SEC_A2} "NX10-NX12角色文件"
 !insertmacro MUI_DESCRIPTION_TEXT ${SEC_C1} "定制的星创模具&电极设计外挂"
+!insertmacro MUI_DESCRIPTION_TEXT ${SEC_C2} "CAD 2018的燕秀外挂界面角色文件"
 !insertmacro MUI_DESCRIPTION_TEXT ${SEC_B1} "定制的UG编程模板/星创的机床后处理文件"
 
 !insertmacro MUI_FUNCTION_DESCRIPTION_END
 
 Section -Post
-  WriteUninstaller "$INSTDIR\Uninst.exe"
-  WriteRegStr ${PRODUCT_UNINST_ROOT_KEY} "${PRODUCT_UNINST_KEY}" "DisplayName" "$(^Name)"
-  WriteRegStr ${PRODUCT_UNINST_ROOT_KEY} "${PRODUCT_UNINST_KEY}" "UninstallString" "$INSTDIR\uninst.exe"
+  WriteUninstaller "$INSTDIR\卸载CAP Customized.exe"
+  WriteRegStr ${PRODUCT_UNINST_ROOT_KEY} "${PRODUCT_UNINST_KEY}" "DisplayName" "${PRODUCT_NAME}"
+  WriteRegStr ${PRODUCT_UNINST_ROOT_KEY} "${PRODUCT_UNINST_KEY}" "UninstallString" "$INSTDIR\卸载CAP Customized.exe"
   WriteRegStr ${PRODUCT_UNINST_ROOT_KEY} "${PRODUCT_UNINST_KEY}" "DisplayIcon" "$INSTDIR\icon\logo.ico"
   WriteRegStr ${PRODUCT_UNINST_ROOT_KEY} "${PRODUCT_UNINST_KEY}" "DisplayVersion" "${PRODUCT_VERSION}"
   WriteRegStr ${PRODUCT_UNINST_ROOT_KEY} "${PRODUCT_UNINST_KEY}" "Publisher" "${PRODUCT_PUBLISHER}"
+  ${GetSize} "$INSTDIR" "/S=0K" $0 $1 $2
+  IntFmt $0 "0x%08X" $0
+  WriteRegDWORD ${PRODUCT_UNINST_ROOT_KEY} "${PRODUCT_UNINST_KEY}" "EstimatedSize" "$0"
 SectionEnd
 
 
@@ -304,6 +314,12 @@ Function GetParent
 FunctionEnd
 
 Function .onInit
+  ;禁止多个安装实例
+  System::Call 'kernel32::CreateMutexA(i 0, i 0, t "CAP Customized") i .r1 ?e'
+  Pop $R0
+  StrCmp $R0 0 +3
+  MessageBox MB_OK|MB_ICONEXCLAMATION "安装程序已经在运行。"
+  Abort
   ;关闭进程
   Push $R0
   CheckProc:
