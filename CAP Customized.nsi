@@ -2,7 +2,7 @@
 
 ; 安装程序初始定义常量
 !define PRODUCT_NAME "CAP Customized"
-!define PRODUCT_VERSION "2.0.190121"
+!define PRODUCT_VERSION "2.0.1901"
 !define PRODUCT_PUBLISHER "Capful"
 !define PRODUCT_UNINST_KEY "Software\Microsoft\Windows\CurrentVersion\Uninstall\${PRODUCT_NAME}"
 !define PRODUCT_UNINST_ROOT_KEY "HKLM"
@@ -24,7 +24,7 @@ SetCompressor lzma
 ;修改标题
 !define MUI_WELCOMEPAGE_TITLE "\r\n   CAP Customized v${PRODUCT_VERSION}"
 ;修改欢迎页面上的描述文字
-!define MUI_WELCOMEPAGE_TEXT  "\r\n    CAP Customized 是专属于 Capful 使用数控编程\r\n    模具设计的定制文件。\r\n\r\n    本软件主要进行了以下定制：\r\n\r\n    1.集成专属角色文件；\r\n    2.定制的加工模板、后处理文件；\r\n    3.定制星创设计&电极外挂正版，安装即可使用。\r\n\r\n　　$_CLICK"
+!define MUI_WELCOMEPAGE_TEXT  "\r\n    CAP Customized 是专属于 Capful 使用数控编程\r\n    模具设计的定制文件。只支持NX10.0以上版本 \r\n\r\n    本软件主要进行了以下定制：\r\n\r\n    1.集成专属角色文件；\r\n    2.定制的加工模板、后处理文件；\r\n    3.定制星创设计&电极外挂正版，安装即可使用。\r\n\r\n　　$_CLICK"
 ; 欢迎页面
 !insertmacro MUI_PAGE_WELCOME
 
@@ -113,6 +113,7 @@ Section "编程模板/后处理" SEC_B1
   Call NX10
   Call NX11
   Call NX12
+  Call NX1847
 SectionEnd
 SectionGroupEnd
 
@@ -139,7 +140,7 @@ SectionGroupEnd
 ; 区段组件描述
 !insertmacro MUI_FUNCTION_DESCRIPTION_BEGIN
 !insertmacro MUI_DESCRIPTION_TEXT ${SEC_A1} "Bat 批处理文件，执行相关配置"
-!insertmacro MUI_DESCRIPTION_TEXT ${SEC_A2} "NX10-NX12角色文件"
+!insertmacro MUI_DESCRIPTION_TEXT ${SEC_A2} "NX10-NX1847角色文件"
 !insertmacro MUI_DESCRIPTION_TEXT ${SEC_C1} "定制的星创模具&电极设计外挂"
 !insertmacro MUI_DESCRIPTION_TEXT ${SEC_C2} "CAD 2018的燕秀外挂界面角色文件"
 !insertmacro MUI_DESCRIPTION_TEXT ${SEC_B1} "定制的UG编程模板/星创的机床后处理文件"
@@ -193,7 +194,6 @@ Function NX10
 #-----------------------------------------------------------------------
 #复制文件
   nsExec::Exec "$INSTDIR\bat\NX10.bat"
-;  ExecWait "$INSTDIR\bat\NX10.bat"
 #-----------------------------------------------------------------------
   Goto end
   no_nx:
@@ -222,12 +222,6 @@ Function NX11
   Pop $R0
 #-----------------------------------------------------------------------
 #-----------------------------------------------------------------------
-#将路径写入注册表
-;  MessageBox MB_OK "NX11已安装,路径为：$R0"
-;  WriteRegExpandStr HKLM "SYSTEM\CurrentControlSet\Control\Session Manager\Environment" "NX11" "$R0"
-;  SendMessage ${HWND_BROADCAST} ${WM_WININICHANGE} 0 "STR:Environment"
-#-----------------------------------------------------------------------
-#-----------------------------------------------------------------------
 #将路径写入文本
 ;  MessageBox MB_OK "NX11已安装,路径为：$R0"
   FileOpen $0 "$INSTDIR\bat\NX11.ini" w
@@ -237,7 +231,6 @@ Function NX11
 #-----------------------------------------------------------------------
 #复制文件
   nsExec::Exec "$INSTDIR\bat\NX11.bat"
-;  ExecWait "$INSTDIR\bat\NX11.bat"
 #-----------------------------------------------------------------------
   Goto end
   no_nx:
@@ -266,12 +259,6 @@ Function NX12
   Pop $R0
 #-----------------------------------------------------------------------
 #-----------------------------------------------------------------------
-#将路径写入注册表
-;  MessageBox MB_OK "NX12已安装,路径为：$R0"
-;  WriteRegExpandStr HKLM "SYSTEM\CurrentControlSet\Control\Session Manager\Environment" "NX12" "$R0"
-;  SendMessage ${HWND_BROADCAST} ${WM_WININICHANGE} 0 "STR:Environment"
-#-----------------------------------------------------------------------
-#-----------------------------------------------------------------------
 #将路径写入文本
 ;  MessageBox MB_OK "NX12已安装,路径为：$R0"
   FileOpen $0 "$INSTDIR\bat\NX12.ini" w
@@ -281,11 +268,47 @@ Function NX12
 #-----------------------------------------------------------------------
 #复制文件
   nsExec::Exec "$INSTDIR\bat\NX12.bat"
-;  ExecWait "$INSTDIR\bat\NX12.bat"
 #-----------------------------------------------------------------------
   Goto end
   no_nx:
 ;  MessageBox MB_OK "NX12未安装"
+  end:
+  Exch $R0
+  Exch $0
+FunctionEnd
+
+Function NX1847
+  Push $R0
+  Push $0
+  ClearErrors
+#-----------------------------------------------------------------------
+#获取注册表键值
+  ReadRegStr $R0 HKLM \
+    "SOFTWARE\WOW6432Node\Unigraphics Solutions\Installed Applications" "Unigraphics V31.0"
+  IfFileExists $R0 0 no_nx   ;如果键值不存在则执行no_nx
+#-----------------------------------------------------------------------
+#获取上级目录，上三级目录
+  Push "$R0"
+  Call GetParent
+  Pop $R0
+  Push "$R0"
+  Call GetParent
+  Pop $R0
+#-----------------------------------------------------------------------
+#-----------------------------------------------------------------------
+#将路径写入文本
+;  MessageBox MB_OK "NX1847已安装,路径为：$R0"
+  FileOpen $0 "$INSTDIR\bat\NX1847.ini" w
+  FileWrite $0 'NX1847=$R0'
+  FileClose $0
+#----------------------------------------------------------------------
+#-----------------------------------------------------------------------
+#复制文件
+  nsExec::Exec "$INSTDIR\bat\NX1847.bat"
+#-----------------------------------------------------------------------
+  Goto end
+  no_nx:
+;  MessageBox MB_OK "NX1847未安装"
   end:
   Exch $R0
   Exch $0
@@ -376,6 +399,7 @@ Function un.onInit
   Call un.NX10
   Call un.NX11
   Call un.NX12
+  Call un.NX1847
   Pop $R0
 FunctionEnd
 
@@ -409,11 +433,6 @@ Function un.NX11
 #-----------------------------------------------------------------------
 #恢复文件
   nsExec::Exec "$INSTDIR\bat\RNX11.bat"
-;  ExecWait "$INSTDIR\bat\RNX11.bat"
-  ; 删除环境变量
-  DeleteRegValue HKLM "SYSTEM\CurrentControlSet\Control\Session Manager\Environment" "NX11"
-; 刷新环境变量
-  SendMessage ${HWND_BROADCAST} ${WM_WININICHANGE} 0 "STR:Environment" /TIMEOUT=5000
 #-----------------------------------------------------------------------
   Goto end
   no_nx:
@@ -430,11 +449,22 @@ Function un.NX12
 #-----------------------------------------------------------------------
 #恢复文件
   nsExec::Exec "$INSTDIR\bat\RNX12.bat"
-;  ExecWait "$INSTDIR\bat\RNX12.bat"
-  ; 删除环境变量
-  DeleteRegValue HKLM "SYSTEM\CurrentControlSet\Control\Session Manager\Environment" "NX12"
-; 刷新环境变量
-  SendMessage ${HWND_BROADCAST} ${WM_WININICHANGE} 0 "STR:Environment" /TIMEOUT=5000
+#-----------------------------------------------------------------------
+  Goto end
+  no_nx:
+  end:
+  Exch $R0
+FunctionEnd
+
+Function un.NX1847
+  Push $R0
+  ClearErrors
+#-----------------------------------------------------------------------
+#获取ini
+  IfFileExists "$INSTDIR\bat\NX1847.ini" 0 no_nx   ;如果文件不存在则执行no_nx
+#-----------------------------------------------------------------------
+#恢复文件
+  nsExec::Exec "$INSTDIR\bat\RNX1847.bat"
 #-----------------------------------------------------------------------
   Goto end
   no_nx:
