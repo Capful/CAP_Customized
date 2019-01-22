@@ -32,7 +32,7 @@
         <PreviewImage type="UGPart" location="${UGII_CAM_TEMPLATE_PART_ENGLISH_DIR}diemold_express.jpg"/>
     </Presentation>
     <ObjectData class="ModelTemplate">
-        <Filename>D:\NX Customized\Template\Capful-Template.prt</Filename>
+        <Filename>D:\CAP Customized\Template\Capful-Template.prt</Filename>
 	<Units>English</Units>
     </ObjectData>
   </PaletteEntry>
@@ -43,7 +43,7 @@
         <PreviewImage type="UGPart" location="${UGII_CAM_TEMPLATE_PART_ENGLISH_DIR}diemold_express.jpg"/>
     </Presentation>
     <ObjectData class="ModelTemplate">
-        <Filename>D:\NX Customized\Template\Capful-Template.prt</Filename>
+        <Filename>D:\CAP Customized\Template\Capful-Template.prt</Filename>
 	<Units>Metric</Units>
     </ObjectData>
   </PaletteEntry>

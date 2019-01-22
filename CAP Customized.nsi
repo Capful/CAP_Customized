@@ -121,8 +121,8 @@ SectionGroup /e "设计模块" SEC_C
 
 Section "星创外挂" SEC_C1
   SetOutPath "$INSTDIR\XcDesignCam"
-;  File /r "XcDesignCam\*.*"
- File /r "XcDesignCam\log\*.*"
+  File /r "XcDesignCam\*.*"
+; File /r "XcDesignCam\log\*.*"
 ; 添加星创环境变量
   WriteRegExpandStr HKLM "SYSTEM\CurrentControlSet\Control\Session Manager\Environment" "UGII_USER_DIR" "$INSTDIR\XcDesignCam"
 ; 刷新环境变量
