@@ -278,20 +278,10 @@ BITMAP  utd_CoolingFixed.bmp
 TYPE    MENU_BUTTON
 ACTION  XC_COOLING_FIXED
 
-NAME    动态水路
-BITMAP  utd_CoolingDynamic.bmp
-TYPE    MENU_BUTTON
-ACTION  XC_COOLING_DYNAMIC
-
 NAME    拖动式水路
 BITMAP  utd_CoolingDrag.bmp
 TYPE    MENU_BUTTON
 ACTION  XC_COOLING_DRAG
-
-NAME    编辑水路
-BITMAP  utd_CoolingEdit.bmp
-TYPE    MENU_BUTTON
-ACTION  XC_COOLING_EDIT
 
 NAME    模板进出水
 BITMAP  utd_MoldPlateInOut.bmp
