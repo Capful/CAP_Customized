@@ -1,8 +1,8 @@
 # CAP Customized 更新日志
 ................................................
-CAP Customized v2.0.1901
+CAP Customized v2.0.1902
 
-+ 定制星创模具&电极设计X2.8.0830
++ 定制星创模具&电极设计X2.9.0215
 
 + 定制加工模板 Capful-3.62
 
@@ -10,7 +10,7 @@ CAP Customized v2.0.1901
 
 + 定制NX用户界面模板 Capful-Template-1.0
 
-+ Capful专用NX角色文件 Capful-2.7
++ Capful专用NX角色文件 Capful-2.9
 
 + 通用星创机床后处理文件
 
