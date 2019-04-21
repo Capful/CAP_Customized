@@ -35,6 +35,10 @@ echo 移除NX 12系统模板备份
 echo.
 if exist "%NX12moban%ugs_model_templates_simpl_chinese.pax" del /q "%backup%NX 12.0\ugs_model_templates_simpl_chinese.bak"
 echo.
+echo 移除NX 12制图模板
+echo.
+if exist "C:\Users\%username%\AppData\Local\Siemens\NX120\nx_Capful_Drafting_Standard_User.dpv" del /q "C:\Users\%username%\AppData\Local\Siemens\NX120\nx_Capful_Drafting_Standard_User.dpv"
+echo.
 echo 恢复NX 12后处理菜单
 echo.
 if exist "%backup%NX 12.0\template_post.bak" del /q "%NX12post%template_post.dat"

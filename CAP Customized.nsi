@@ -2,7 +2,7 @@
 
 ; 安装程序初始定义常量
 !define PRODUCT_NAME "CAP Customized"
-!define PRODUCT_VERSION "2.0.1903"
+!define PRODUCT_VERSION "2.1.1904"
 !define PRODUCT_PUBLISHER "Capful"
 !define PRODUCT_UNINST_KEY "Software\Microsoft\Windows\CurrentVersion\Uninstall\${PRODUCT_NAME}"
 !define PRODUCT_UNINST_ROOT_KEY "HKLM"
@@ -104,10 +104,6 @@ Section "编程模板/后处理" SEC_B1
   SectionIn RO
   SetOutPath "$INSTDIR\Template"
   File "Template\*.*"
-  SetOutPath "$INSTDIR\Template\电极加工模板"
-  File "Template\电极加工模板\*.*"
-  SetOutPath "$INSTDIR\Template\默认加工模板"
-  File "Template\默认加工模板\*.*"
   SetOutPath "$INSTDIR\Postprocessor"
   File "Postprocessor\*.*"
   Call NX10

@@ -31,6 +31,10 @@ echo.
 echo 替换NX12加工模板菜单..
 copy /y "%Template%cam_general.opt" "%NX12meun%"
 echo.
+echo.
+echo 替换NX12制图模板..
+copy /y "%Template%nx_Capful_Drafting_Standard_User.dpv" "C:\Users\%username%\AppData\Local\Siemens\NX120"
+echo.
 echo 替换NX 12后处理菜单
 copy /y "%post%template_post.dat" "%NX12post%"
 echo.
