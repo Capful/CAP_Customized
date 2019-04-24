@@ -33,7 +33,7 @@ copy /y "%Template%cam_general.opt" "%NX10meun%"
 echo.
 echo.
 echo 替换NX10制图模板..
-copy /y "%Template%nx_Capful_Drafting_Standard_User.dpv" "C:\Users\%username%\AppData\Local\Siemens\NX100"
+copy /y "%Template%nx_Capful_Drafting_Standard_User.dpv" "%LocalAppData%\Siemens\NX100"
 echo.
 echo 替换NX 10后处理菜单
 copy /y "%post%template_post.dat" "%NX10post%"
