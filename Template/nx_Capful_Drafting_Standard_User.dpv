@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?xml-stylesheet type="text/xsl" href="nx_Capful_Drafting_Standard_User.xsl"?>
-<!--Product Version: NX 1859, Modified: 20-Apr-2019 16:01:18-->
+<!--Product Version: NX 1859, Modified: 10-May-2019 19:36:30-->
 <PrefValues>
 <Pref Application="制图标准" Category="图纸格式" SubCategory="边界和区域" Tab="边界显示" displayValue="是" modified="2014-01-07T11:42:56" name="Drafting_borderDisplayCreateTrimmingMarks" title="修剪标记 - 创建修剪标记" value="true"/>
 <Pref Application="制图标准" Category="注释" SubCategory="焊接符号" Tab="自动焊接" displayValue="0.1" modified="2012-12-20T16:10:46" name="Weld_DraftArcWeldGridEndCapDisp" title="弧焊网格线显示 - 端盖" value="0.1"/>
@@ -27,14 +27,14 @@
 <Pref Application="制图标准" Category="尺寸" SubCategory="窄尺寸" Tab="窄尺寸" displayValue="无" modified="2012-12-20T16:10:46" name="Drafting_narrowDimensionArrowheadType" title="格式 - 箭头" value="6"/>
 <Pref Application="制图标准" Category="视图" SubCategory="剖切线" Tab="显示和格式" displayValue="粗端，箭头远离直线" modified="2012-12-20T16:10:46" name="Axs_sxlDisplay_EU" title="显示 - 类型" value="6"/>
 <Pref Application="制图标准" Category="尺寸" SubCategory="孔标注" Tab="螺钉间隙孔" displayValue="" modified="2012-12-20T16:10:46" name="Drafting_ScrewClearanceHole_CountersinkDiameter_Suffix" title="埋头直径后缀" value=""/>
-<Pref Application="制图标准" Category="公共" SubCategory="文字" Tab="文字" displayValue="3.5" modified="2012-12-20T16:10:46" name="Drafting_draftTextCharSize_MU" title="文本参数 - 高度" value="3.5"/>
+<Pref Application="制图标准" Category="公共" SubCategory="文字" Tab="文字" displayValue="3.5" modified="2019-05-10T11:10:17" name="Drafting_draftTextCharSize_MU" title="文本参数 - 高度" value="3.5"/>
 <Pref Application="制图标准" Category="视图" SubCategory="投影" Tab="标签" displayValue="字母" modified="2012-12-20T16:10:46" name="Drafting_projectedVwLabelTextLabelType" title="视图标签 - 视图标签类型" value="2"/>
 <Pref Application="制图标准" Category="表" SubCategory="表格注释" Tab="表格注释" displayValue="否" modified="2012-12-20T16:10:46" name="Drafting_tabnoteLockFormat" title="工作流程 - 锁定格式" value="false"/>
 <Pref Application="制图标准" Category="图纸格式" SubCategory="边界和区域" Tab="边界显示" displayValue="拐角" modified="2014-01-07T11:42:56" name="Drafting_boderDisplayTrimmingMarksStyle" title="修剪标记 - 样式" value="1"/>
-<Pref Application="制图标准" Category="视图" SubCategory="剖切线" Tab="显示和格式" displayValue="粗端，箭头远离直线" modified="2019-04-17T05:53:50" name="Axs_sxlDisplay_MU" title="显示 - 类型" value="6"/>
+<Pref Application="制图标准" Category="视图" SubCategory="剖切线" Tab="显示和格式" displayValue="箭头远离直线" modified="2019-05-10T11:36:34" name="Axs_sxlDisplay_MU" title="显示 - 类型" value="2"/>
 <Pref Application="制图标准" Category="图纸格式" SubCategory="边界和区域" Tab="边界边距" displayValue="0.0" modified="2014-01-07T12:03:50" name="Drafting_borderMarginsTopUntrimmed_EU" title="未修剪边距 - 顶部未修剪" value="0.0"/>
 <Pref Application="制图标准" Category="注释" SubCategory="表面粗糙度符号" Tab="格式" displayValue="0.35 mm" modified="2012-12-20T16:10:46" name="Drafting_SFsymbolLineWidth" title="宽度" value="9"/>
-<Pref Application="制图标准" Category="视图" SubCategory="工作流程" Tab="工作流程" displayValue="186" modified="2019-04-17T03:08:45" name="Drafting_borderColor" title="边界 - 颜色" value="186"/>
+<Pref Application="制图标准" Category="视图" SubCategory="工作流程" Tab="工作流程" displayValue="130" modified="2019-05-10T11:10:17" name="Drafting_borderColor" title="边界 - 颜色" value="130"/>
 <Pref Application="制图标准" Category="尺寸" SubCategory="公差" Tab="公差" displayValue="是" modified="2012-12-20T16:10:46" name="Drafting_tolLeadingZeros_EU" title="显示和单位 - 显示前导零" value="1"/>
 <Pref Application="制图标准" Category="表" SubCategory="孔表" Tab="工作流程" displayValue="否" modified="2012-12-20T16:10:46" name="DR_HOLEREPORT_LOCK_FORMAT" title="锁定格式" value="false"/>
 <Pref Application="制图标准" Category="图纸格式" SubCategory="边界和区域" Tab="边界边距" displayValue="0.0" modified="2014-01-07T11:42:56" name="Drafting_borderMarginsTopUntrimmed_MU" title="未修剪边距 - 顶部未修剪" value="0.0"/>
@@ -81,7 +81,7 @@
 <Pref Application="制图标准" Category="尺寸" SubCategory="文本" Tab="单位" displayValue="分数表示的度" modified="2012-12-20T16:10:46" name="Drafting_angularUnits" title="角度尺寸 - 公称尺寸显示" value="1"/>
 <Pref Application="制图标准" Category="尺寸" SubCategory="倒斜角" Tab="倒斜角" displayValue="指引线与倒斜角平行" modified="2012-12-20T16:10:46" name="Drafting_chamferDimensionLeader" title="指引线格式 - 样式" value="2"/>
 <Pref Application="制图标准" Category="表" SubCategory="孔表" Tab="标签格式" displayValue="数字" modified="2012-12-20T16:10:46" name="DR_HOLEREPORT_LABEL" title="索引" value="1"/>
-<Pref Application="制图标准" Category="公共" SubCategory="直线/箭头" Tab="箭头线/指引线" displayValue="216" modified="2012-12-20T16:10:46" name="Drafting_arrowLine1Color_MU" title="第 1 侧指引线和箭头线 - 颜色" value="216"/>
+<Pref Application="制图标准" Category="公共" SubCategory="直线/箭头" Tab="箭头线/指引线" displayValue="108" modified="2019-05-10T11:10:17" name="Drafting_arrowLine1Color_MU" title="第 1 侧指引线和箭头线 - 颜色" value="108"/>
 <Pref Application="制图标准" Category="注释" SubCategory="中心线" Tab="中心线" displayValue="216" modified="2012-12-20T16:10:46" name="Drafting_centerlineColor_EU" title="格式 - 颜色" value="216"/>
 <Pref Application="制图标准" Category="图纸格式" SubCategory="边界和区域" Tab="边界边距" displayValue="0.0" modified="2014-01-07T11:42:56" name="Drafting_sheetZoneTopMargin_MU" title="边距 - 上" value="0.0"/>
 <Pref Application="制图标准" Category="公共" SubCategory="直线/箭头" Tab="延伸线" displayValue="0.0" modified="2012-12-20T16:10:46" name="Drafting_extensionLineAngle" title="格式 - (F) 延伸线角度" value="0.0"/>
@@ -111,7 +111,7 @@
 <Pref Application="制图标准" Category="视图" SubCategory="剖切线" Tab="箭头" displayValue="0.25" modified="2012-12-20T16:10:46" name="Axs_arrowFillDistance_MU" title="填充笔画距离" value="0.25"/>
 <Pref Application="制图标准" Category="图纸格式" SubCategory="边界和区域" Tab="边界显示" displayValue="2.00 mm" modified="2014-01-07T10:26:35" name="Drafting_borderDisplayCenteringMarkWidth" title="中心标记和定向标记 - 宽度" value="13"/>
 <Pref Application="制图标准" Category="尺寸" SubCategory="孔标注" Tab="螺钉间隙孔" displayValue="&lt;#C&gt;&lt;o&gt; " modified="2012-12-20T16:10:46" name="Drafting_ScrewClearanceHole_CountersinkDiameter_Prefix" title="埋头直径前缀" value="&lt;#C&gt;&lt;o&gt; "/>
-<Pref Application="制图标准" Category="公共" SubCategory="直线/箭头" Tab="延伸线" displayValue="216" modified="2012-12-20T16:10:46" name="Drafting_extensionLine1Color_MU" title="标志指引线或第 1 侧 - 颜色" value="216"/>
+<Pref Application="制图标准" Category="公共" SubCategory="直线/箭头" Tab="延伸线" displayValue="108" modified="2019-05-10T11:25:14" name="Drafting_extensionLine1Color_MU" title="标志指引线或第 1 侧 - 颜色" value="108"/>
 <Pref Application="制图标准" Category="注释" SubCategory="相交符号" Tab="相交" displayValue="实体" modified="2012-12-20T16:10:46" name="Drafting_intersectionFont" title="格式 - 样式" value="1"/>
 <Pref Application="制图标准" Category="尺寸" SubCategory="参考" Tab="参考" displayValue="关" modified="2012-12-20T16:10:46" name="Drafting_PrefixSuffixReference" title="格式 - 定制参考文本" value="0"/>
 <Pref Application="制图标准" Category="图纸格式" SubCategory="图纸页" Tab="尺寸和比例" displayValue="1189.0" modified="2012-12-20T16:10:46" name="Drafting_drawingWidth_MU" title="长度" value="1189.0"/>
@@ -132,7 +132,7 @@
 <Pref Application="制图标准" Category="视图" SubCategory="公共" Tab="次要几何体" displayValue="不可见" modified="2015-03-18T16:10:46" name="Drafting_SecondaryHiddenByPrimaryVisibleLineFont" title="次要几何体被主要几何体隐藏 - 可见线样式" value="0"/>
 <Pref Application="制图标准" Category="视图" SubCategory="断开" Tab="断开" displayValue="3.0" modified="2012-12-20T16:10:46" name="Drafting_BreakLineExtension_MU" title="断裂线 - 延伸" value="3.0"/>
 <Pref Application="制图标准" Category="图纸格式" SubCategory="边界和区域" Tab="边界边距" displayValue="0.0" modified="2014-01-07T12:03:50" name="Drafting_sheetZoneBottomMargin_EU" title="边距 - 下" value="0.0"/>
-<Pref Application="制图标准" Category="尺寸" SubCategory="文本" Tab="附加文本" displayValue="3.5" modified="2012-12-20T16:10:46" name="Drafting_appTextCharSize_MU" title="格式 - 高度" value="3.5"/>
+<Pref Application="制图标准" Category="尺寸" SubCategory="文本" Tab="附加文本" displayValue="3.0" modified="2019-05-10T11:10:17" name="Drafting_appTextCharSize_MU" title="格式 - 高度" value="3.0"/>
 <Pref Application="制图标准" Category="注释" SubCategory="剖面线/区域填充" Tab="剖面线/区域填充" displayValue="1" modified="2019-04-17T05:53:50" name="Drafting_crosshatchColor_MU" title="格式 - 颜色" value="1"/>
 <Pref Application="制图标准" Category="视图" SubCategory="公共" Tab="配置" displayValue="否" modified="2015-07-21T18:21:00" name="Drafting_enableLightweightViews" title="设置 - 启用轻量级视图" value="false"/>
 <Pref Application="制图标准" Category="视图" SubCategory="公共" Tab="角度" displayValue="是" modified="2012-12-20T16:10:46" name="Drafting_viewAngleLeadingZeros_EU" title="格式 - 显示前导零" value="1"/>
@@ -147,7 +147,7 @@
 <Pref Application="制图标准" Category="图纸格式" SubCategory="边界和区域" Tab="区域" displayValue="50.0" modified="2014-01-07T11:42:56" name="Drafting_sheetZoneVerticalSize_MU" title="常规 - 竖直尺寸" value="50.0"/>
 <Pref Application="制图标准" Category="视图" SubCategory="公共" Tab="隐藏线" displayValue="1.0" modified="2012-12-20T16:10:46" name="Drafting_smallFeatureTolerancePercent" title="小特征 - 公差" value="1.0"/>
 <Pref Application="制图标准" Category="尺寸" SubCategory="公差" Tab="公差" displayValue="否" modified="2012-12-20T16:10:46" name="Drafting_dimToleranceConversion" title="显示和单位 - 在更改单位时转换公差" value="0"/>
-<Pref Application="制图标准" Category="尺寸" SubCategory="文本" Tab="单位" displayValue="1" modified="2012-12-20T16:10:46" name="Drafting_dimensionDecimalPlaces_MU" title="小数位数" value="1"/>
+<Pref Application="制图标准" Category="尺寸" SubCategory="文本" Tab="单位" displayValue="2" modified="2019-05-10T11:16:29" name="Drafting_dimensionDecimalPlaces_MU" title="小数位数" value="2"/>
 <Pref Application="制图标准" Category="视图" SubCategory="剖视图" Tab="设置" displayValue="关" modified="2012-12-20T16:10:46" name="Drafting_hdCrosshatch" title="剖面线 - 处理隐藏的剖面线" value="0"/>
 <Pref Application="制图标准" Category="注释" SubCategory="表面粗糙度符号" Tab="设置" displayValue="开" modified="2012-12-20T16:10:46" name="Drafting_SFsymbol_Roughness" title="粗糙度" value="1"/>
 <Pref Application="制图标准" Category="尺寸" SubCategory="文本" Tab="格式" displayValue="是" modified="2012-12-20T16:10:46" name="Drafting_doubleDimsToSymmCenterlines" title="到中心线的双尺寸值" value="1"/>
@@ -173,7 +173,7 @@
 <Pref Application="制图标准" Category="尺寸" SubCategory="孔标注" Tab="常规孔" displayValue=" THRU" modified="2016-08-20T16:10:46" name="Drafting_GeneralHole_Through_Hole_Text" title="通孔文本" value=" THRU"/>
 <Pref Application="制图标准" Category="视图" SubCategory="公共" Tab="视图标签" displayValue="1" modified="2012-12-20T16:10:46" name="Drafting_vwLabelMinLetters" title="标签 - 最小字母数" value="1"/>
 <Pref Application="制图标准" Category="视图" SubCategory="局部放大图" Tab="标签" displayValue="在短划线之前或之后" modified="2012-12-20T16:10:46" name="Drafting_detailVwLabelTextAboveLeader" title="父项上的标签 - 文本放置" value="1"/>
-<Pref Application="制图标准" Category="视图" SubCategory="剖切线" Tab="显示和格式" displayValue="78" modified="2019-04-17T05:53:50" name="Axs_sxlColor_MU" title="格式 - 颜色" value="78"/>
+<Pref Application="制图标准" Category="视图" SubCategory="剖切线" Tab="显示和格式" displayValue="6" modified="2019-05-10T11:25:14" name="Axs_sxlColor_MU" title="格式 - 颜色" value="6"/>
 <Pref Application="制图标准" Category="视图" SubCategory="投影" Tab="标签" displayValue="图纸页和区域" modified="2012-12-20T16:10:46" name="Drafting_projectedVwLabelShowReference" title="视图标签 - 要显示的引用" value="1"/>
 <Pref Application="制图标准" Category="视图" SubCategory="剖切线" Tab="标签" displayValue="0.2" modified="2012-12-20T16:10:46" name="Axs_sxletterCharSize_EU" title="字符大小" value="0.2"/>
 <Pref Application="制图标准" Category="尺寸" SubCategory="孔标注" Tab="钻形孔" displayValue=" THRU" modified="2016-08-20T16:10:46" name="Drafting_DrillSizeHole_Through_Hole_Text" title="通孔文本" value=" THRU"/>
@@ -203,13 +203,13 @@
 <Pref Application="制图标准" Category="尺寸" SubCategory="折线" Tab="折线" displayValue="45.0" modified="2012-12-20T16:10:46" name="Drafting_ordinateDoglegAngle" title="坐标格式 - (C) 角度" value="45.0"/>
 <Pref Application="制图标准" Category="视图" SubCategory="公共" Tab="常规" displayValue="是" modified="2012-12-20T16:10:46" name="Drafting_centerlineAutoCreate" title="工作流程 - 带中心线创建" value="1"/>
 <Pref Application="制图标准" Category="注释" SubCategory="中心线" Tab="中心线" displayValue="0.0625" modified="2012-12-20T16:10:46" name="Drafting_cylCenterlineExtension_EU" title="自动中心线 - 圆柱延伸" value="0.0625"/>
-<Pref Application="制图标准" Category="视图" SubCategory="局部放大图" Tab="设置" displayValue="0.35 mm" modified="2012-12-20T16:10:46" name="Drafting_detailViewBoundaryLineWidth" title="边界格式 - 宽度" value="8"/>
+<Pref Application="制图标准" Category="视图" SubCategory="局部放大图" Tab="设置" displayValue="0.18 mm" modified="2019-05-10T11:27:59" name="Drafting_detailViewBoundaryLineWidth" title="边界格式 - 宽度" value="6"/>
 <Pref Application="制图标准" Category="尺寸" SubCategory="孔标注" Tab="螺钉间隙孔" displayValue="" modified="2012-12-20T16:10:46" name="Drafting_ScrewClearanceHole_CounterboreDiameter_Suffix" title="沉头直径后缀" value=""/>
 <Pref Application="制图标准" Category="尺寸" SubCategory="文本" Tab="公差" displayValue="216" modified="2012-12-20T16:10:46" name="Drafting_tolTextColor_MU" title="格式 - 颜色" value="216"/>
 <Pref Application="制图标准" Category="视图" SubCategory="工作流程" Tab="工作流程" displayValue="关" modified="2012-12-20T16:10:46" name="Drafting_shadingShowFacetEdges" title="可见设置 - 显示小平面的边" value="0"/>
 <Pref Application="制图标准" Category="表" SubCategory="公共" Tab="表区域" displayValue="5" modified="2012-12-20T16:10:46" name="Drafting_tabnoteInitialNumberOfRows" title="行和列大小 - 行数" value="5"/>
-<Pref Application="制图标准" Category="公共" SubCategory="直线/箭头" Tab="箭头" displayValue="216" modified="2012-12-20T16:10:46" name="Drafting_arrowHead2Color_MU" title="第 2 侧尺寸 - 颜色" value="216"/>
-<Pref Application="制图标准" Category="注释" SubCategory="中心线" Tab="中心线" displayValue="1.5" modified="2012-12-20T16:10:46" name="Drafting_cylCenterlineExtension_MU" title="自动中心线 - 圆柱延伸" value="1.5"/>
+<Pref Application="制图标准" Category="公共" SubCategory="直线/箭头" Tab="箭头" displayValue="108" modified="2019-05-10T11:25:14" name="Drafting_arrowHead2Color_MU" title="第 2 侧尺寸 - 颜色" value="108"/>
+<Pref Application="制图标准" Category="注释" SubCategory="中心线" Tab="中心线" displayValue="1.0" modified="2019-05-10T11:27:59" name="Drafting_cylCenterlineExtension_MU" title="自动中心线 - 圆柱延伸" value="1.0"/>
 <Pref Application="制图标准" Category="注释" SubCategory="表面粗糙度符号" Tab="切除选项" displayValue="W +0.5 Ry 0.4 Rz 0.8 Rz 0.4 2.5 2.5/Rz 16 2.5/Rz 6.3 2.5/Ry 6.3max. Rz 50 Rz 25 Rz 10 Rz 0.6 Ry 20 Ry 10 Ry 0.8 Ry 0.5 Ry 0.4 Ry 0.2 Ry 2.5" modified="2012-12-20T16:10:46" name="Drafting_SFCutoffList" title="切除（微米）" value="&quot;W +0.5&quot;\&quot;Ry 0.4&quot;\&quot;Rz 0.8&quot;\&quot;Rz 0.4&quot;\&quot;2.5&quot;\&quot;2.5/Rz 16&quot;\&quot;2.5/Rz 6.3&quot;\&quot;2.5/Ry 6.3max.&quot;\&quot;Rz 50&quot;\&quot;Rz 25&quot;\&quot;Rz 10&quot;\&quot;Rz 0.6&quot;\&quot;Ry 20&quot;\&quot;Ry 10&quot;\&quot;Ry 0.8&quot;\&quot;Ry 0.5&quot;\&quot;Ry 0.4&quot;\&quot;Ry 0.2&quot;\&quot;Ry 2.5&quot;"/>
 <Pref Application="制图标准" Category="尺寸" SubCategory="倒斜角" Tab="倒斜角" displayValue="x" modified="2012-12-20T16:10:46" name="Drafting_chamferDimensionSeperator" title="倒斜角格式 - 分隔符" value="1"/>
 <Pref Application="制图标准" Category="视图" SubCategory="公共" Tab="着色" displayValue="0.4" modified="2012-12-20T16:10:46" name="Drafting_viewShadedShininess" title="格式 - 光亮度" value="0.4"/>
@@ -244,7 +244,7 @@
 <Pref Application="制图标准" Category="表" SubCategory="孔表" Tab="内容" displayValue="HOLE_DIAMETER:1 HOLE_DIAMETER_FIT:1 HOLE_DEPTH:1 HOLE_DEPTH_FIT:1 HOLE_DRILL_TYPE:1 HOLE_DRILL_DIRECTION:1" modified="2012-12-20T16:10:46" name="DR_HOLEREPORT_DETAIL" title="内容和顺序" value="&quot;HOLE_DIAMETER:1&quot;\&quot;HOLE_DIAMETER_FIT:1&quot;\&quot;HOLE_DEPTH:1&quot;\&quot;HOLE_DEPTH_FIT:1&quot;\&quot;HOLE_DRILL_TYPE:1&quot;\&quot;HOLE_DRILL_DIRECTION:1&quot;"/>
 <Pref Application="制图标准" Category="视图" SubCategory="公共" Tab="次要几何体" displayValue="否" modified="2015-03-18T16:10:46" name="Drafting_ProcessPrimaryHiddenBySecondary" title="工艺 - 主要几何体被次要几何体隐藏" value="false"/>
 <Pref Application="制图标准" Category="视图" SubCategory="公共" Tab="角度" displayValue="句点" modified="2012-12-20T16:10:46" name="Drafting_viewAngleDecimalPoint_MU" title="格式 - 小数分隔符" value="0"/>
-<Pref Application="制图标准" Category="视图" SubCategory="剖切线" Tab="偏置" displayValue="否" modified="2012-12-20T16:10:46" name="Drafting_offsetSectionLineToggle" title="创建偏置剖切线" value="false"/>
+<Pref Application="制图标准" Category="视图" SubCategory="剖切线" Tab="偏置" displayValue="否" modified="2019-05-10T11:36:34" name="Drafting_offsetSectionLineToggle" title="创建偏置剖切线" value="false"/>
 <Pref Application="制图标准" Category="尺寸" SubCategory="文本" Tab="方向和位置" displayValue="0.0" modified="2012-12-20T16:10:46" name="Drafting_textAngle" title="角度" value="0.0"/>
 <Pref Application="制图标准" Category="尺寸" SubCategory="文本" Tab="单位" displayValue="抑制后置零" modified="2012-12-20T16:10:46" name="Drafting_angularSuppressZeros" title="角度尺寸 - 显示零" value="3"/>
 <Pref Application="制图标准" Category="图纸格式" SubCategory="边界和区域" Tab="边界显示" displayValue="实体" modified="2014-01-07T11:42:56" name="Drafting_borderDisplayOuterLineFont" title="边界 - 外侧线样式" value="1"/>
@@ -329,7 +329,7 @@
 <Pref Application="制图标准" Category="视图" SubCategory="公共" Tab="隐藏线" displayValue="0.18 mm" modified="2019-04-16T14:21:09" name="Drafting_hlWidth" title="格式 - 宽度" value="6"/>
 <Pref Application="制图标准" Category="表" SubCategory="公共" Tab="单元格" displayValue="否" modified="2012-12-20T16:10:46" name="Drafting_tabnoteCellTextIsVertical" title="格式 - 竖直文本" value="0"/>
 <Pref Application="制图标准" Category="视图" SubCategory="工作流程" Tab="工作流程" displayValue="是" modified="2012-12-20T16:10:46" name="Drafting_loadComponentOnSelection" title="轻量级视图 - 在选择视图时加载组件" value="true"/>
-<Pref Application="制图标准" Category="常规" SubCategory="标准" Tab="标准" displayValue="ISO 1101 - 1983" modified="2012-12-20T16:10:46" name="Gdt_standard" title="原有形位公差 - 公差标准" value="3"/>
+<Pref Application="制图标准" Category="常规" SubCategory="标准" Tab="标准" displayValue="ISO 1101 - 1983" modified="2019-05-10T11:25:14" name="Gdt_standard" title="原有形位公差 - 公差标准" value="3"/>
 <Pref Application="制图标准" Category="尺寸" SubCategory="孔标注" Tab="符号螺纹" displayValue="Shaft Size:&lt;o&gt; " modified="2012-12-20T16:10:46" name="Drafting_SymbolicThread_ShaftSize_Prefix" title="轴尺寸前缀" value="Shaft Size:&lt;o&gt; "/>
 <Pref Application="制图标准" Category="视图" SubCategory="公共" Tab="视图标签" displayValue="" modified="2012-12-20T16:10:46" name="Drafting_vwLabelExcludedLetters" title="标签 - 未包含的字母" value=""/>
 <Pref Application="制图标准" Category="视图" SubCategory="公共" Tab="PMI" displayValue="否" modified="2012-12-20T16:10:46" name="Drafting_inheritPmiOntoDrawing" title="继承 - 在图纸上显示 PMI" value="false"/>
@@ -343,7 +343,7 @@
 <Pref Application="制图标准" Category="尺寸" SubCategory="公差" Tab="公差" displayValue="显示零公差为 0" modified="2012-12-20T16:10:46" name="Drafting_zeroToleranceDisplayStyle" title="显示和单位 - 零显示" value="2"/>
 <Pref Application="制图标准" Category="公共" SubCategory="符号" Tab="符号" displayValue="实体" modified="2012-12-20T16:10:46" name="Drafting_userDefSymFont" title="格式 - 样式" value="1"/>
 <Pref Application="制图标准" Category="视图" SubCategory="公共" Tab="视图标签" displayValue="" modified="2016-06-30T16:10:42" name="Drafting_vwLabelExcludedLetterstoEnd" title="标签 - 排除用末位字母" value=""/>
-<Pref Application="制图标准" Category="公共" SubCategory="文字" Tab="文字" displayValue="细线宽度" modified="2012-12-20T16:10:46" name="Drafting_draftTextWidth" title="文本参数 - 宽度" value="3"/>
+<Pref Application="制图标准" Category="公共" SubCategory="文字" Tab="文字" displayValue="正常宽度" modified="2019-05-10T11:10:17" name="Drafting_draftTextWidth" title="文本参数 - 宽度" value="1"/>
 <Pref Application="制图标准" Category="表" SubCategory="公共" Tab="单元格" displayValue="度" modified="2012-12-20T16:10:46" name="Drafting_tabnoteCellAngularUnits" title="格式 - 角度单位" value="1"/>
 <Pref Application="制图标准" Category="尺寸" SubCategory="公差" Tab="公差" displayValue="无" modified="2014-02-11T16:24:13" name="Drafting_LimitsAndFitsSplitByDimline" title="限制和配合 - 由尺寸线分开" value="0"/>
 <Pref Application="制图标准" Category="尺寸" SubCategory="坐标" Tab="坐标" displayValue="0.0" modified="2012-12-20T16:10:46" name="Drafting_ordinateSymbolAngle" title="原点符号 - 角度" value="0.0"/>
@@ -404,12 +404,12 @@
 <Pref Application="制图标准" Category="表" SubCategory="公共" Tab="表区域" displayValue="1.0" modified="2012-12-20T16:10:46" name="Drafting_tabnoteAutoRoundingDistance_MU" title="行和列大小 - 对距离自动取整" value="1.0"/>
 <Pref Application="制图标准" Category="尺寸" SubCategory="文本" Tab="公差" displayValue="0.5" modified="2012-12-20T16:10:46" name="Drafting_dimTolTextSpaceFactor" title="格式 - 文本间隙因子" value="0.5"/>
 <Pref Application="制图标准" Category="公共" SubCategory="直线/箭头" Tab="箭头" displayValue="0.15" modified="2012-12-20T16:10:46" name="Drafting_arrowSize_EU" title="格式 - (A) 长度" value="0.15"/>
-<Pref Application="制图标准" Category="尺寸" SubCategory="文本" Tab="附加文本" displayValue="0.5" modified="2012-12-20T16:10:46" name="Drafting_appTextSpaceFactor" title="格式 - NX 字体间隙因子" value="0.5"/>
+<Pref Application="制图标准" Category="尺寸" SubCategory="文本" Tab="附加文本" displayValue="1.0" modified="2019-05-10T11:10:17" name="Drafting_appTextSpaceFactor" title="格式 - NX 字体间隙因子" value="1.0"/>
 <Pref Application="制图标准" Category="视图" SubCategory="公共" Tab="角度" displayValue="分数表示的度" modified="2012-12-20T16:10:46" name="Drafting_viewAngleFormat" title="格式 - 格式" value="0"/>
 <Pref Application="制图标准" Category="视图" SubCategory="剖切线" Tab="偏置" displayValue="10.0" modified="2012-12-20T16:10:46" name="Drafting_offsetSectionLineForeground_MU" title="前景偏置" value="10.0"/>
 <Pref Application="制图标准" Category="视图" SubCategory="剖视图" Tab="标签" displayValue="下方" modified="2012-12-20T16:10:46" name="Drafting_sectionVwLabelViewScalePosition" title="视图比例 - 位置" value="2"/>
 <Pref Application="制图标准" Category="注释" SubCategory="表面粗糙度符号" Tab="表面粗糙度类型" displayValue="开" modified="2012-12-20T16:10:46" name="Drafting_SFsymbol_Material_Removal_Required" title="需要除料" value="1"/>
-<Pref Application="制图标准" Category="公共" SubCategory="直线/箭头" Tab="箭头" displayValue="4.0" modified="2012-12-20T16:10:46" name="Drafting_arrowSize_MU" title="格式 - (A) 长度" value="4.0"/>
+<Pref Application="制图标准" Category="公共" SubCategory="直线/箭头" Tab="箭头" displayValue="4.0" modified="2019-05-10T11:25:14" name="Drafting_arrowSize_MU" title="格式 - (A) 长度" value="4.0"/>
 <Pref Application="制图标准" Category="尺寸" SubCategory="公差" Tab="公差" displayValue="中心值和拟合" modified="2014-02-11T16:24:13" name="Drafting_LimitsAndFitsAlignment" title="限制和配合 - 对齐" value="1"/>
 <Pref Application="制图标准" Category="图纸格式" SubCategory="标题块" Tab="标题块" displayValue="右下" modified="2012-12-20T16:10:46" name="Drafting_TitleBlockAlignPosition" title="对齐 - 标题块位置" value="4"/>
 <Pref Application="制图标准" Category="尺寸" SubCategory="孔标注" Tab="螺纹孔" displayValue=" X " modified="2012-12-20T16:10:46" name="Drafting_ThreadedHole_Angle_Prefix" title="角度前缀" value=" X "/>
@@ -518,18 +518,18 @@
 <Pref Application="制图标准" Category="注释" SubCategory="表面粗糙度符号" Tab="设置" displayValue="开" modified="2012-12-20T16:10:46" name="Drafting_SFsymbol_LowerText" title="下部文本" value="1"/>
 <Pref Application="制图标准" Category="图纸格式" SubCategory="边界和区域" Tab="区域" displayValue="0.125" modified="2014-01-07T12:03:50" name="Drafting_zonesLabelHeight_EU" title="标签 - 标签高度" value="0.125"/>
 <Pref Application="制图标准" Category="表" SubCategory="公共" Tab="表区域" displayValue="7.0" modified="2012-12-20T16:10:46" name="Drafting_tabnoteInitialRowHeight_MU" title="行和列大小 - 行高度" value="7.0"/>
-<Pref Application="制图标准" Category="公共" SubCategory="直线/箭头" Tab="箭头线/指引线" displayValue="216" modified="2012-12-20T16:10:46" name="Drafting_arrowLine2Color_MU" title="第 2 侧箭头线 - 颜色" value="216"/>
+<Pref Application="制图标准" Category="公共" SubCategory="直线/箭头" Tab="箭头线/指引线" displayValue="108" modified="2019-05-10T11:10:17" name="Drafting_arrowLine2Color_MU" title="第 2 侧箭头线 - 颜色" value="108"/>
 <Pref Application="制图标准" Category="公共" SubCategory="符号" Tab="符号" displayValue="216" modified="2012-12-20T16:10:46" name="Drafting_userDefSymColor" title="格式 - 颜色" value="216"/>
 <Pref Application="制图标准" Category="尺寸" SubCategory="文本" Tab="公差" displayValue="细线宽度" modified="2012-12-20T16:10:46" name="Drafting_tolTextWidth" title="格式 - 宽度" value="3"/>
-<Pref Application="制图标准" Category="视图" SubCategory="剖切线" Tab="显示和格式" displayValue="实体" modified="2012-12-20T16:10:46" name="Axs_sxlFont" title="格式 - 样式" value="1"/>
+<Pref Application="制图标准" Category="视图" SubCategory="剖切线" Tab="显示和格式" displayValue="双点划线" modified="2019-05-10T11:25:14" name="Axs_sxlFont" title="格式 - 样式" value="3"/>
 <Pref Application="制图标准" Category="图纸格式" SubCategory="边界和区域" Tab="区域" displayValue="3.5" modified="2014-01-07T11:42:56" name="Drafting_zonesLabelHeight_MU" title="标签 - 标签高度" value="3.5"/>
 <Pref Application="制图标准" Category="视图" SubCategory="公共" Tab="虚拟交线" displayValue="0.35 mm" modified="2019-04-16T14:21:09" name="Drafting_isectWidth" title="格式 - 宽度" value="8"/>
 <Pref Application="制图标准" Category="视图" SubCategory="公共" Tab="光顺边" displayValue="否" modified="2012-12-20T16:10:46" name="Drafting_smoothEdgeTolerance" title="格式 - 替代角度公差" value="0"/>
-<Pref Application="制图标准" Category="常规" SubCategory="标准" Tab="标准" displayValue=" 中国国家标准" modified="2019-04-16T14:54:15" name="Drafting_centerLineDisplay" title="标准 - 中心线显示" value="1"/>
+<Pref Application="制图标准" Category="常规" SubCategory="标准" Tab="标准" displayValue=" 中国国家标准" modified="2019-05-10T11:25:14" name="Drafting_centerLineDisplay" title="标准 - 中心线显示" value="1"/>
 <Pref Application="制图标准" Category="注释" SubCategory="焊接符号" Tab="自动焊接" displayValue="Title1:[Title1] Title2:[Title2]" modified="2012-12-20T16:10:46" name="Weld_DraftSymbolTailPlugSlotAttrTitle" title="结尾 - 塞焊/槽焊" value="&quot;Title1:[Title1]&quot;\&quot;Title2:[Title2]&quot;"/>
 <Pref Application="制图标准" Category="视图" SubCategory="公共" Tab="次要几何体" displayValue="0.35 mm" modified="2015-03-18T16:10:46" name="Drafting_SecondaryHiddenByPrimaryHiddenLineWidth" title="次要几何体被主要几何体隐藏 - 隐藏线线宽" value="8"/>
 <Pref Application="制图标准" Category="视图" SubCategory="公共" Tab="着色" displayValue="1.0" modified="2012-12-20T16:10:46" name="Drafting_shadedViewFacetTolerance" title="公差 - 着色视图小平面公差" value="1.0"/>
-<Pref Application="制图标准" Category="公共" SubCategory="直线/箭头" Tab="延伸线" displayValue="0.35 mm" modified="2012-12-20T16:10:46" name="Drafting_extensionLine1Width" title="标志指引线或第 1 侧 - 宽度" value="9"/>
+<Pref Application="制图标准" Category="公共" SubCategory="直线/箭头" Tab="延伸线" displayValue="0.18 mm" modified="2019-05-10T11:25:14" name="Drafting_extensionLine1Width" title="标志指引线或第 1 侧 - 宽度" value="7"/>
 <Pref Application="制图标准" Category="视图" SubCategory="剖切线" Tab="偏置" displayValue="1.0" modified="2012-12-20T16:10:46" name="Drafting_offsetSectionLineBackground_EU" title="背景偏置" value="1.0"/>
 <Pref Application="制图标准" Category="视图" SubCategory="公共" Tab="可见线" displayValue="0.35 mm" modified="2019-04-16T14:21:09" name="Drafting_visWidth" title="格式 - 宽度" value="8"/>
 <Pref Application="制图标准" Category="表" SubCategory="零件明细表" Tab="标注" displayValue="$~C" modified="2012-12-20T16:10:46" name="Drafting_plistMainSymbolText" title="格式 - 定制文本" value="$~C"/>
@@ -548,7 +548,7 @@
 <Pref Application="制图标准" Category="注释" SubCategory="剖面线/区域填充" Tab="剖面线/区域填充" displayValue="10.0" modified="2012-12-20T16:10:46" name="Drafting_hatchMargin" title="岛 - 边距" value="10.0"/>
 <Pref Application="制图标准" Category="尺寸" SubCategory="径向" Tab="径向" displayValue="否" modified="2012-12-20T16:10:46" name="Drafting_useDiameterForInferredCircles" title="自动判断整圆的直径尺寸" value="false"/>
 <Pref Application="制图标准" Category="注释" SubCategory="表面粗糙度符号" Tab="次要粗糙度" displayValue="W +0.5 Ry 0.4 Rz 0.8 Rz 0.4 2.5 Rz 50 Rz 25 Rz 10 Rz 0.6 Ry 20 Ry 10 Ry 0.8 Ry 0.5 Ry 0.4 Ry 0.2 Ry 2.5 2.5/Rz 16 2.5/Rz 6.3 2.5/Ry 6.3max." modified="2012-12-20T16:10:46" name="Drafting_SFotherRoughnessValuesList" title="Ra 以外的辅助粗糙度" value="&quot;W +0.5&quot;\&quot;Ry 0.4&quot;\&quot;Rz 0.8&quot;\&quot;Rz 0.4&quot;\&quot;2.5&quot;\&quot;Rz 50&quot;\&quot;Rz 25&quot;\&quot;Rz 10&quot;\&quot;Rz 0.6&quot;\&quot;Ry 20&quot;\&quot;Ry 10&quot;\&quot;Ry 0.8&quot;\&quot;Ry 0.5&quot;\&quot;Ry 0.4&quot;\&quot;Ry 0.2&quot;\&quot;Ry 2.5&quot;\&quot;2.5/Rz 16&quot;\&quot;2.5/Rz 6.3&quot;\&quot;2.5/Ry 6.3max.&quot;"/>
-<Pref Application="制图标准" Category="公共" SubCategory="直线/箭头" Tab="延伸线" displayValue="216" modified="2012-12-20T16:10:46" name="Drafting_extensionLine2Color_MU" title="第 2 侧 - 颜色" value="216"/>
+<Pref Application="制图标准" Category="公共" SubCategory="直线/箭头" Tab="延伸线" displayValue="108" modified="2019-05-10T11:25:14" name="Drafting_extensionLine2Color_MU" title="第 2 侧 - 颜色" value="108"/>
 <Pref Application="制图标准" Category="尺寸" SubCategory="文本" Tab="附加文本" displayValue="之后" modified="2012-12-20T16:10:46" name="Drafting_appendedTextSite_MU" title="格式 - 附加文本位置" value="2"/>
 <Pref Application="制图标准" Category="表" SubCategory="零件明细表" Tab="标注" displayValue="普通" modified="2012-12-20T16:10:46" name="Drafting_plistCalloutLeaderPlacement" title="符号指引线 - 类型" value="0"/>
 <Pref Application="制图标准" Category="尺寸" SubCategory="孔标注" Tab="符号螺纹" displayValue="" modified="2012-12-20T16:10:46" name="Drafting_SymbolicThread_PatternCount_Prefix" title="阵列数前缀" value=""/>
@@ -562,7 +562,7 @@
 <Pref Application="制图标准" Category="表" SubCategory="孔表" Tab="孔过滤器" displayValue="是" modified="2012-12-20T16:10:46" name="DR_HOLEREPORT_TYPE9" title="要包含的类型 - 制图草图中的圆" value="true"/>
 <Pref Application="制图标准" Category="视图" SubCategory="局部放大图" Tab="标签" displayValue="1.0" modified="2012-12-20T16:10:46" name="Drafting_detailVwLabelScalePrefixFactor" title="视图比例 - 前缀字符高度因子" value="1.0"/>
 <Pref Application="制图标准" Category="表" SubCategory="孔表" Tab="工作流程" displayValue="否" modified="2012-12-20T16:10:46" name="DR_HOLEREPORT_LOCK_CONTENTS" title="锁定内容" value="false"/>
-<Pref Application="制图标准" Category="尺寸" SubCategory="文本" Tab="附加文本" displayValue="216" modified="2012-12-20T16:10:46" name="Drafting_appTextColor" title="格式 - 颜色" value="216"/>
+<Pref Application="制图标准" Category="尺寸" SubCategory="文本" Tab="附加文本" displayValue="108" modified="2019-05-10T11:10:17" name="Drafting_appTextColor" title="格式 - 颜色" value="108"/>
 <Pref Application="制图标准" Category="视图" SubCategory="投影" Tab="标签" displayValue="1.4" modified="2012-12-20T16:10:46" name="Drafting_projectedVwLabelScalePrefixFactor" title="视图比例 - 前缀文本比例因子" value="1.4"/>
 <Pref Application="制图标准" Category="注释" SubCategory="剖面线/区域填充" Tab="剖面线/区域填充" displayValue="0.125" modified="2012-12-20T16:10:46" name="Drafting_crosshatchSpacing_EU" title="剖面线 - 距离" value="0.125"/>
 <Pref Application="制图标准" Category="图纸格式" SubCategory="边界和区域" Tab="边界边距" displayValue="虚线" modified="2014-01-07T11:42:56" name="Drafting_borderMarginsFont" title="边距 - 样式" value="2"/>
@@ -578,10 +578,10 @@
 <Pref Application="制图标准" Category="注释" SubCategory="表面粗糙度符号" Tab="生产工艺选项" displayValue="Blast Shotblast Turn Shot Drill Rub Mill Scrape Grind Plane Lap Polish High Polish with Mirror Finish Erode Punch Depolish/Dim/Dull Nitrify/Nitrate Chromium Plate Zinc Coat/Galvanize" modified="2012-12-20T16:10:46" name="Drafting_SFproductionList" title="生产工艺" value="&quot;Blast&quot;\&quot;Shotblast&quot;\&quot;Turn&quot;\&quot;Shot&quot;\&quot;Drill&quot;\&quot;Rub&quot;\&quot;Mill&quot;\&quot;Scrape&quot;\&quot;Grind&quot;\&quot;Plane&quot;\&quot;Lap&quot;\&quot;Polish&quot;\&quot;High Polish with Mirror Finish&quot;\&quot;Erode&quot;\&quot;Punch&quot;\&quot;Depolish/Dim/Dull&quot;\&quot;Nitrify/Nitrate&quot;\&quot;Chromium Plate&quot;\&quot;Zinc Coat/Galvanize&quot;"/>
 <Pref Application="制图标准" Category="图纸格式" SubCategory="边界和区域" Tab="边界显示" displayValue="封闭" modified="2014-01-07T11:42:56" name="Drafting_boderDisplayArrowStyle" title="箭头设置 - 样式" value="1"/>
 <Pref Application="制图标准" Category="图纸格式" SubCategory="边界和区域" Tab="边界边距" displayValue="0.6" modified="2014-01-07T12:03:50" name="Drafting_sheetZoneLeftMargin_EU" title="边距 - 左" value="0.6"/>
-<Pref Application="制图标准" Category="公共" SubCategory="直线/箭头" Tab="箭头线/指引线" displayValue="0.35 mm" modified="2012-12-20T16:10:46" name="Drafting_arrowLine2Width" title="第 2 侧箭头线 - 宽度" value="9"/>
+<Pref Application="制图标准" Category="公共" SubCategory="直线/箭头" Tab="箭头线/指引线" displayValue="0.18 mm" modified="2019-05-10T11:10:17" name="Drafting_arrowLine2Width" title="第 2 侧箭头线 - 宽度" value="7"/>
 <Pref Application="制图标准" Category="尺寸" SubCategory="坐标" Tab="坐标" displayValue="是" modified="2012-12-20T16:10:46" name="Drafting_ordinateShowDimensionLine" title="集 - 显示尺寸线" value="1"/>
 <Pref Application="制图标准" Category="注释" SubCategory="GDT" Tab="GDT" displayValue="实体" modified="2012-12-20T16:10:46" name="Drafting_gdtFont" title="格式 - 样式" value="1"/>
-<Pref Application="制图标准" Category="公共" SubCategory="直线/箭头" Tab="延伸线" displayValue="0.35 mm" modified="2012-12-20T16:10:46" name="Drafting_extensionLine2Width" title="第 2 侧 - 宽度" value="9"/>
+<Pref Application="制图标准" Category="公共" SubCategory="直线/箭头" Tab="延伸线" displayValue="0.18 mm" modified="2019-05-10T11:25:14" name="Drafting_extensionLine2Width" title="第 2 侧 - 宽度" value="7"/>
 <Pref Application="制图标准" Category="图纸格式" SubCategory="边界和区域" Tab="边界边距" displayValue="15.0" modified="2014-01-07T11:42:56" name="Drafting_sheetZoneLeftMargin_MU" title="边距 - 左" value="15.0"/>
 <Pref Application="制图标准" Category="尺寸" SubCategory="孔标注" Tab="螺纹孔" displayValue="" modified="2012-12-20T16:10:46" name="Drafting_ThreadedHole_PatternCount_Prefix" title="阵列数前缀" value=""/>
 <Pref Application="制图标准" Category="尺寸" SubCategory="文本" Tab="格式" displayValue="关" modified="2012-12-20T16:10:46" name="Drafting_inspectionDisplayType" title="显示为检测尺寸" value="0"/>
@@ -607,7 +607,7 @@
 <Pref Application="制图标准" Category="视图" SubCategory="公共" Tab="PMI" displayValue="无" modified="2012-12-20T16:10:46" name="Drafting_inheritGdt" title="继承 - 公差特征" value="0"/>
 <Pref Application="制图标准" Category="尺寸" SubCategory="孔标注" Tab="螺纹孔" displayValue="" modified="2012-12-20T16:10:46" name="Drafting_ThreadedHole_ThreadSize_Suffix" title="螺纹规格后缀" value=""/>
 <Pref Application="制图标准" Category="图纸格式" SubCategory="边界和区域" Tab="区域" displayValue="10.0" modified="2014-01-07T11:42:56" name="Drafting_zonesMarkingHeight_MU" title="标记 - 标记高度" value="10.0"/>
-<Pref Application="制图标准" Category="公共" SubCategory="直线/箭头" Tab="箭头" displayValue="20.0" modified="2012-12-20T16:10:46" name="Drafting_includedAngle" title="格式 - (B) 角度" value="20.0"/>
+<Pref Application="制图标准" Category="公共" SubCategory="直线/箭头" Tab="箭头" displayValue="25.0" modified="2019-05-10T11:25:14" name="Drafting_includedAngle" title="格式 - (B) 角度" value="25.0"/>
 <Pref Application="制图标准" Category="尺寸" SubCategory="文本" Tab="方向和位置" displayValue="文本与尺寸线对齐" modified="2012-12-20T16:10:46" name="Drafting_ordinateTextOrientation_EU" title="坐标 - 方位" value="2"/>
 <Pref Application="制图标准" Category="尺寸" SubCategory="孔标注" Tab="常规孔" displayValue="" modified="2012-12-20T16:10:46" name="Drafting_GeneralHole_CountersinkAngle_Suffix" title="埋头角度后缀" value=""/>
 <Pref Application="制图标准" Category="公共" SubCategory="文字" Tab="文字" displayValue="0.0" modified="2012-12-20T16:10:46" name="Drafting_standardDraftTextSpaceFactor" title="文本参数 - 标准字体间隙因子" value="0.0"/>
@@ -637,7 +637,7 @@
 <Pref Application="制图标准" Category="公共" SubCategory="直线/箭头" Tab="箭头线/指引线" displayValue="指引线从左侧指来" modified="2012-12-20T16:10:46" name="Drafting_leaderOrientation" title="短划线 - 方向" value="0"/>
 <Pref Application="制图标准" Category="视图" SubCategory="公共" Tab="螺纹" displayValue="否" modified="2012-12-20T16:10:46" name="Drafting_overrideVisibleThreadColor" title="外观 - 可见的颜色" value="0"/>
 <Pref Application="制图标准" Category="公共" SubCategory="直线/箭头" Tab="透视缩短符号" displayValue="30.0" modified="2014-02-13T16:10:46" name="Drafting_foreshorteningSymbolAngle" title="透视缩短符号 - 角度" value="30.0"/>
-<Pref Application="制图标准" Category="尺寸" SubCategory="文本" Tab="单位" displayValue="句点" modified="2012-12-20T16:10:46" name="Drafting_decimalPoint_MU" title="小数分隔符" value="0"/>
+<Pref Application="制图标准" Category="尺寸" SubCategory="文本" Tab="单位" displayValue="句点" modified="2019-05-10T11:27:59" name="Drafting_decimalPoint_MU" title="小数分隔符" value="0"/>
 <Pref Application="制图标准" Category="尺寸" SubCategory="窄尺寸" Tab="窄尺寸" displayValue="60.0" modified="2012-12-20T16:10:46" name="Drafting_narrowDimensionLeaderAngle" title="格式 - 指引线角度" value="60.0"/>
 <Pref Application="制图标准" Category="视图" SubCategory="公共" Tab="次要几何体" displayValue="否" modified="2015-03-18T16:10:46" name="Drafting_ProcessSecondaryHiddenByPrimary" title="工艺 - 次要几何体被主要几何体隐藏" value="false"/>
 <Pref Application="制图标准" Category="视图" SubCategory="剖视图" Tab="设置" displayValue="关" modified="2012-12-20T16:10:46" name="Drafting_fgDisplay" title="格式 - 显示前景" value="0"/>
@@ -657,14 +657,14 @@
 <Pref Application="制图标准" Category="图纸格式" SubCategory="边界和区域" Tab="边界显示" displayValue="0.50 mm" modified="2014-01-07T11:42:56" name="Drafting_borderDisplayInnerLineWidth" title="边界 - 内边界线线宽" value="9"/>
 <Pref Application="制图标准" Category="尺寸" SubCategory="孔标注" Tab="符号螺纹" displayValue="Tap Drill:&lt;o&gt; " modified="2012-12-20T16:10:46" name="Drafting_SymbolicThread_TapDrillSize_Prefix" title="丝锥尺寸前缀" value="Tap Drill:&lt;o&gt; "/>
 <Pref Application="制图标准" Category="注释" SubCategory="表面粗糙度符号" Tab="等级" displayValue="N12 N11 N10 N9 N8 N7 N6 N5 N4 N3 N2 N1" modified="2012-12-20T16:10:46" name="Drafting_SFroughnessList_N" title="粗糙度（粗糙度等级）" value="&quot;N12&quot;\&quot;N11&quot;\&quot;N10&quot;\&quot;N9&quot;\&quot;N8&quot;\&quot;N7&quot;\&quot;N6&quot;\&quot;N5&quot;\&quot;N4&quot;\&quot;N3&quot;\&quot;N2&quot;\&quot;N1&quot;"/>
-<Pref Application="制图标准" Category="公共" SubCategory="直线/箭头" Tab="箭头" displayValue="0.35 mm" modified="2012-12-20T16:10:46" name="Drafting_arrowHead1Width" title="第 1 侧指引线和尺寸 - 宽度" value="9"/>
+<Pref Application="制图标准" Category="公共" SubCategory="直线/箭头" Tab="箭头" displayValue="0.18 mm" modified="2019-05-10T11:10:17" name="Drafting_arrowHead1Width" title="第 1 侧指引线和尺寸 - 宽度" value="7"/>
 <Pref Application="制图标准" Category="视图" SubCategory="公共" Tab="常规" displayValue="是" modified="2012-12-20T16:10:46" name="Drafting_autoAnchor" title="工作流程 - 带自动锚点创建" value="1"/>
 <Pref Application="制图标准" Category="尺寸" SubCategory="坐标" Tab="坐标" displayValue="2" modified="2012-12-20T16:10:46" name="Drafting_marginNumber" title="边距 - 边距数" value="2"/>
 <Pref Application="制图标准" Category="视图" SubCategory="工作流程" Tab="工作流程" displayValue="否" modified="2012-12-20T16:10:46" name="Drafting_loadComponentsOnDemand" title="智能轻量级视图 - 需要时加载组件" value="false"/>
 <Pref Application="制图标准" Category="视图" SubCategory="剖视图" Tab="设置" displayValue="1.27" modified="2012-12-20T16:10:46" name="Axs_xhatchAdjacencyToler_MU" title="剖面线 - 剖面线相邻公差" value="1.27"/>
 <Pref Application="制图标准" Category="视图" SubCategory="公共" Tab="着色" displayValue="线框" modified="2012-12-20T16:10:46" name="Drafting_viewRenderingStyle" title="格式 - 渲染样式" value="0"/>
 <Pref Application="制图标准" Category="尺寸" SubCategory="双尺寸" Tab="双尺寸" displayValue="小数" modified="2012-12-20T16:10:46" name="Drafting_dualDimensionsFractions" title="格式 - 数字显示" value="1"/>
-<Pref Application="制图标准" Category="公共" SubCategory="直线/箭头" Tab="箭头线/指引线" displayValue="0.35 mm" modified="2012-12-20T16:10:46" name="Drafting_arrowLine1Width" title="第 1 侧指引线和箭头线 - 宽度" value="9"/>
+<Pref Application="制图标准" Category="公共" SubCategory="直线/箭头" Tab="箭头线/指引线" displayValue="0.18 mm" modified="2019-05-10T11:10:17" name="Drafting_arrowLine1Width" title="第 1 侧指引线和箭头线 - 宽度" value="7"/>
 <Pref Application="制图标准" Category="视图" SubCategory="剖切线" Tab="显示和格式" displayValue="2.0" modified="2012-12-20T16:10:46" name="Drafting_sectionLineBendAndEndSegmentWidthFactor" title="格式 - 折弯和结束段宽度因子" value="2.0"/>
 <Pref Application="制图标准" Category="尺寸" SubCategory="孔标注" Tab="螺纹孔" displayValue="" modified="2012-12-20T16:10:46" name="Drafting_ThreadedHole_ThreadSize_Prefix" title="螺纹规格前缀" value=""/>
 <Pref Application="制图标准" Category="注释" SubCategory="目标点符号" Tab="目标" displayValue="实体" modified="2012-12-20T16:10:46" name="Drafting_targetPointFont" title="格式 - 样式" value="1"/>
@@ -689,7 +689,7 @@
 <Pref Application="制图标准" Category="注释" SubCategory="符号标注" Tab="符号标注" displayValue="6.0" modified="2012-12-20T16:10:46" name="Drafting_idSymbolSize_MU" title="设置 - 大小" value="6.0"/>
 <Pref Application="制图标准" Category="表" SubCategory="公共" Tab="单元格" displayValue="0.0" modified="2012-12-20T16:10:46" name="Drafting_tabnoteCellTextSlant" title="格式 - 倾斜角度" value="0.0"/>
 <Pref Application="制图标准" Category="视图" SubCategory="基本/图纸" Tab="标签" displayValue="关" modified="2012-12-20T16:10:46" name="Drafting_otherVwLabelIncludeScaleLabel" title="视图比例 - 显示视图比例" value="0"/>
-<Pref Application="制图标准" Category="视图" SubCategory="剖切线" Tab="箭头" displayValue="15.0" modified="2012-12-20T16:10:46" name="Axs_arrowIncludedAngle" title="(C) 角度" value="15.0"/>
+<Pref Application="制图标准" Category="视图" SubCategory="剖切线" Tab="箭头" displayValue="25.0" modified="2019-05-10T11:25:14" name="Axs_arrowIncludedAngle" title="(C) 角度" value="25.0"/>
 <Pref Application="制图标准" Category="视图" SubCategory="局部放大图" Tab="标签" displayValue="否" modified="2012-12-20T16:10:46" name="Drafting_detailVwLabelIncludeParentheses" title="视图比例 - 包含括号" value="0"/>
 <Pref Application="制图标准" Category="注释" SubCategory="相交符号" Tab="相交" displayValue="0.35 mm" modified="2012-12-20T16:10:46" name="Drafting_intersectionWidth" title="格式 - 宽度" value="9"/>
 <Pref Application="制图标准" Category="视图" SubCategory="工作流程" Tab="工作流程" displayValue="211" modified="2012-12-20T16:10:46" name="Drafting_activeViewColor" title="边界 - 颜色 - 活动草图视图" value="211"/>
@@ -718,7 +718,7 @@
 <Pref Application="制图标准" Category="视图" SubCategory="公共" Tab="虚拟交线" displayValue="关" modified="2012-12-20T16:10:46" name="Drafting_isectGapping" title="格式 - 显示端点缝隙" value="0"/>
 <Pref Application="制图标准" Category="视图" SubCategory="公共" Tab="隐藏线" displayValue="159" modified="2019-04-16T14:21:09" name="Drafting_hlColor" title="格式 - 颜色" value="159"/>
 <Pref Application="制图标准" Category="尺寸" SubCategory="文本" Tab="附加文本" displayValue="0.7" modified="2012-12-20T16:10:46" name="Drafting_appSymbolAspectRatio" title="格式 - 符号宽高比" value="0.7"/>
-<Pref Application="制图标准" Category="公共" SubCategory="直线/箭头" Tab="箭头" displayValue="0.35 mm" modified="2012-12-20T16:10:46" name="Drafting_arrowHead2Width" title="第 2 侧尺寸 - 宽度" value="9"/>
+<Pref Application="制图标准" Category="公共" SubCategory="直线/箭头" Tab="箭头" displayValue="0.18 mm" modified="2019-05-10T11:10:17" name="Drafting_arrowHead2Width" title="第 2 侧尺寸 - 宽度" value="7"/>
 <Pref Application="制图标准" Category="视图" SubCategory="剖视图" Tab="标签" displayValue="" modified="2012-12-20T16:10:46" name="Drafting_sectionVwLabelScaleLabelPrefix" title="视图比例 - 前缀" value=""/>
 <Pref Application="制图标准" Category="注释" SubCategory="剖面线/区域填充" Tab="剖面线/区域填充" displayValue="0.00167" modified="2012-12-20T16:10:46" name="Drafting_solidfillDistance_EU" title="区域填充 - 填充笔画距离" value="0.00167"/>
 <Pref Application="制图标准" Category="注释" SubCategory="中心线" Tab="中心线" displayValue="0.0" modified="2012-12-20T16:10:46" name="Drafting_centerlineAngle" title="尺寸 - 角度" value="0.0"/>
@@ -729,14 +729,14 @@
 <Pref Application="制图标准" Category="公共" SubCategory="直线/箭头" Tab="箭头" displayValue="216" modified="2012-12-20T16:10:46" name="Drafting_arrowHead1Color_EU" title="第 1 侧指引线和尺寸 - 颜色" value="216"/>
 <Pref Application="制图标准" Category="表" SubCategory="孔表" Tab="孔类型符号" displayValue="SK" modified="2012-12-20T16:10:46" name="DR_HOLEREPORT_TYPE8_SYMBOL" title="草图孔" value="SK"/>
 <Pref Application="制图标准" Category="视图" SubCategory="局部放大图" Tab="标签" displayValue="A" modified="2012-12-20T16:10:46" name="Drafting_detailVwLabelLetterFormat" title="视图标签 - 字母格式" value="1"/>
-<Pref Application="制图标准" Category="公共" SubCategory="文字" Tab="文字" displayValue="216" modified="2012-12-20T16:10:46" name="Drafting_draftTextColor" title="文本参数 - 颜色" value="216"/>
+<Pref Application="制图标准" Category="公共" SubCategory="文字" Tab="文字" displayValue="144" modified="2019-05-10T11:10:17" name="Drafting_draftTextColor" title="文本参数 - 颜色" value="144"/>
 <Pref Application="制图标准" Category="注释" SubCategory="目标点符号" Tab="目标" displayValue="0.35 mm" modified="2012-12-20T16:10:46" name="Drafting_targetPointWidth" title="格式 - 宽度" value="9"/>
 <Pref Application="制图标准" Category="图纸格式" SubCategory="图纸页" Tab="尺寸和比例" displayValue="第一" modified="2012-12-20T16:10:46" name="Drafting_projectionAngle" title="正投影角" value="1"/>
 <Pref Application="制图标准" Category="公共" SubCategory="文字" Tab="文字" displayValue="0.7" modified="2012-12-20T16:10:46" name="Drafting_draftTextAspectRatio" title="文本参数 - 文本宽高比" value="0.7"/>
 <Pref Application="制图标准" Category="公共" SubCategory="直线/箭头" Tab="延伸线" displayValue="0.0" modified="2012-12-20T16:10:46" name="Drafting_pointLine2_MU" title="第 2 侧 - (J) 间隙" value="0.0"/>
-<Pref Application="制图标准" Category="公共" SubCategory="直线/箭头" Tab="箭头" displayValue="216" modified="2012-12-20T16:10:46" name="Drafting_arrowHead1Color_MU" title="第 1 侧指引线和尺寸 - 颜色" value="216"/>
+<Pref Application="制图标准" Category="公共" SubCategory="直线/箭头" Tab="箭头" displayValue="108" modified="2019-05-10T11:25:14" name="Drafting_arrowHead1Color_MU" title="第 1 侧指引线和尺寸 - 颜色" value="108"/>
 <Pref Application="制图标准" Category="图纸格式" SubCategory="边界和区域" Tab="边界边距" displayValue="0.0" modified="2014-01-07T12:03:50" name="Drafting_sheetZoneTopMargin_EU" title="边距 - 上" value="0.0"/>
-<Pref Application="制图标准" Category="公共" SubCategory="文字" Tab="文字" displayValue="0.5" modified="2012-12-20T16:10:46" name="Drafting_draftTextSpaceFactor" title="文本参数 - NX 字体间隙因子" value="0.5"/>
+<Pref Application="制图标准" Category="公共" SubCategory="文字" Tab="文字" displayValue="1.0" modified="2019-05-10T11:10:17" name="Drafting_draftTextSpaceFactor" title="文本参数 - NX 字体间隙因子" value="1.0"/>
 <Pref Application="制图标准" Category="尺寸" SubCategory="孔标注" Tab="螺纹孔" displayValue="PATTERN_COUNT:1 THREAD_SIZE:1 THREAD_DEPTH:0 DEPTH:1 LINE_BREAK1:1 PITCH:0 ANGLE:0 LINE_BREAK2:1 MINOR_DIAMETER:0 LINE_BREAK3:1 MAJOR_DIAMETER:0 LINE_BREAK4:0 TAP_DRILL_DIAMETER:0 LINE_BREAK5:0" modified="2012-12-20T16:10:46" name="Drafting_ThreadedHole_Parameter_Order" title="参数" value="&quot;PATTERN_COUNT:1&quot;\&quot;THREAD_SIZE:1&quot;\&quot;THREAD_DEPTH:0&quot;\&quot;DEPTH:1&quot;\&quot;LINE_BREAK1:1&quot;\&quot;PITCH:0&quot;\&quot;ANGLE:0&quot;\&quot;LINE_BREAK2:1&quot;\&quot;MINOR_DIAMETER:0&quot;\&quot;LINE_BREAK3:1&quot;\&quot;MAJOR_DIAMETER:0&quot;\&quot;LINE_BREAK4:0&quot;\&quot;TAP_DRILL_DIAMETER:0&quot;\&quot;LINE_BREAK5:0&quot;"/>
 <Pref Application="制图标准" Category="图纸格式" SubCategory="边界和区域" Tab="边界显示" displayValue="标准" modified="2014-01-07T11:42:56" name="Drafting_ZoneMethod" title="显示 - 方法" value="1"/>
 <Pref Application="制图标准" Category="视图" SubCategory="公共" Tab="追踪线" displayValue="否" modified="2019-04-16T14:21:09" name="Drafting_traceLineGapping" title="创建缝隙" value="0"/>
@@ -750,7 +750,7 @@
 <Pref Application="制图标准" Category="表" SubCategory="孔表" Tab="标签格式" displayValue="右上" modified="2012-12-20T16:10:46" name="DR_HOLEREPORT_RELATIVE_LOCATION" title="相对位置" value="2"/>
 <Pref Application="制图标准" Category="表" SubCategory="孔表" Tab="工作流程" displayValue="否" modified="2012-12-20T16:10:46" name="DR_HOLEREPORT_AUTO_UPDATE" title="自动更新" value="false"/>
 <Pref Application="制图标准" Category="视图" SubCategory="局部放大图" Tab="设置" displayValue="关" modified="2012-12-20T16:10:46" name="Drafting_detailViewCreateIndependent" title="常规 - 创建独立的局部放大图" value="0"/>
-<Pref Application="制图标准" Category="尺寸" SubCategory="倒斜角" Tab="倒斜角" displayValue="大小和角度" modified="2012-12-20T16:10:46" name="Drafting_chamferDimensionForm" title="倒斜角格式 - 样式" value="3"/>
+<Pref Application="制图标准" Category="尺寸" SubCategory="倒斜角" Tab="倒斜角" displayValue="符号 C" modified="2019-05-10T11:16:29" name="Drafting_chamferDimensionForm" title="倒斜角格式 - 样式" value="1"/>
 <Pref Application="制图标准" Category="尺寸" SubCategory="文本" Tab="尺寸" displayValue="0.6" modified="2012-12-20T16:10:46" name="Drafting_dimTextAspectRatio" title="格式 - 文本宽高比" value="0.6"/>
 <Pref Application="制图标准" Category="表" SubCategory="孔表" Tab="属性" displayValue="*D_FIT*, *D_TOL*" modified="2012-12-20T16:10:46" name="DR_HOLEREPORT_DIA_FIT" title="直径配合" value="*D_FIT*, *D_TOL*"/>
 <Pref Application="制图标准" Category="尺寸" SubCategory="折线" Tab="折线" displayValue="5.0" modified="2012-12-20T16:10:46" name="Drafting_ordinateDoglegStartOffset_MU" title="坐标格式 - (A) 起始偏置" value="5.0"/>
@@ -795,7 +795,7 @@
 <Pref Application="制图标准" Category="视图" SubCategory="公共" Tab="角度" displayValue="否" modified="2012-12-20T16:10:46" name="Drafting_viewAngleTrailingZeros_MU" title="格式 - 显示后置零" value="0"/>
 <Pref Application="制图标准" Category="尺寸" SubCategory="孔标注" Tab="文字" displayValue="1.0" modified="2012-12-20T16:10:46" name="Drafting_CalloutGeneral_LineSpaceFactor" title="行间距因子" value="1.0"/>
 <Pref Application="制图标准" Category="视图" SubCategory="公共" Tab="PMI" displayValue="无" modified="2012-12-20T16:10:46" name="Drafting_inheritPmi" title="继承 - PMI" value="0"/>
-<Pref Application="制图标准" Category="视图" SubCategory="剖切线" Tab="显示和格式" displayValue="0.35 mm" modified="2012-12-20T16:10:46" name="Axs_sxlWidth" title="格式 - 宽度" value="8"/>
+<Pref Application="制图标准" Category="视图" SubCategory="剖切线" Tab="显示和格式" displayValue="0.35 mm" modified="2019-05-10T11:10:17" name="Axs_sxlWidth" title="格式 - 宽度" value="8"/>
 <Pref Application="制图标准" Category="图纸格式" SubCategory="边界和区域" Tab="边界显示" displayValue="否" modified="2014-01-07T11:42:56" name="Drafting_borderDisplaySheetSizeInBorder" title="边界 - 在边框内显示图纸规格" value="false"/>
 <Pref Application="制图标准" Category="注释" SubCategory="焊接符号" Tab="自动焊接" displayValue="Title1:[Title1] Title2:[Title2]" modified="2012-12-20T16:10:46" name="Weld_DraftSymbolTailButtAttrTitle" title="结尾 - 对接焊" value="&quot;Title1:[Title1]&quot;\&quot;Title2:[Title2]&quot;"/>
 <Pref Application="制图标准" Category="尺寸" SubCategory="参考" Tab="参考" displayValue="否" modified="2012-12-20T16:10:46" name="Drafting_showReferenceDimension" title="格式 - 显示为参考尺寸" value="false"/>
@@ -817,7 +817,7 @@
 <Pref Application="制图标准" Category="视图" SubCategory="公共" Tab="光顺边" displayValue="关" modified="2012-12-20T16:10:46" name="Drafting_smoothEdgeGapping" title="格式 - 显示端点缝隙" value="0"/>
 <Pref Application="制图标准" Category="表" SubCategory="公共" Tab="单元格" displayValue="是" modified="2017-11-07T06:33:44" name="Drafting_tabnoteCellShowTrailingZeros" title="格式 - 显示后置零" value="true"/>
 <Pref Application="制图标准" Category="视图" SubCategory="公共" Tab="追踪线" displayValue="原先" modified="2012-12-20T16:10:46" name="Drafting_traceLineVisibleWidth" title="格式 - 可见线 - 宽度" value="0"/>
-<Pref Application="制图标准" Category="视图" SubCategory="剖切线" Tab="箭头线" displayValue="20.0" modified="2012-12-20T16:10:46" name="Axs_arrowLength_MU" title="长度" value="20.0"/>
+<Pref Application="制图标准" Category="视图" SubCategory="剖切线" Tab="箭头线" displayValue="8.0" modified="2019-05-10T11:25:14" name="Axs_arrowLength_MU" title="长度" value="8.0"/>
 <Pref Application="制图标准" Category="图纸格式" SubCategory="图纸页" Tab="名称和编号" displayValue="Sheet 1" modified="2012-12-20T16:10:46" name="Drafting_drawingName_MU" title="图纸页名称" value="Sheet 1"/>
 <Pref Application="制图标准" Category="视图" SubCategory="公共" Tab="光顺边" displayValue="3.0" modified="2012-12-20T16:10:46" name="Drafting_smoothEdgeGapSize_MU" title="格式 - 端点缝隙大小" value="3.0"/>
 <Pref Application="制图标准" Category="尺寸" SubCategory="孔标注" Tab="螺钉间隙孔" displayValue="" modified="2012-12-20T16:10:46" name="Drafting_ScrewClearanceHole_Depth_Suffix" title="深度后缀" value=""/>
@@ -828,7 +828,7 @@
 <Pref Application="制图标准" Category="视图" SubCategory="工作流程" Tab="工作流程" displayValue="关" modified="2012-12-20T16:10:46" name="Drafting_shadingLineAntialiasing" title="可见设置 - 使用线条反锯齿" value="0"/>
 <Pref Application="制图标准" Category="公共" SubCategory="直线/箭头" Tab="延伸线" displayValue="是" modified="2012-12-20T16:10:46" name="Drafting_showExtensionLinesSideTwo" title="第 2 侧 - 显示延伸线" value="true"/>
 <Pref Application="制图标准" Category="尺寸" SubCategory="折线" Tab="折线" displayValue="5.0" modified="2014-02-15T01:18:38" name="Drafting_linearSide1JogStartOffset_MU" title="第 1 侧线性格式 - (A) 起始偏置" value="5.0"/>
-<Pref Application="制图标准" Category="尺寸" SubCategory="文本" Tab="尺寸" displayValue="216" modified="2012-12-20T16:10:46" name="Drafting_dimTextColor_MU" title="格式 - 颜色" value="216"/>
+<Pref Application="制图标准" Category="尺寸" SubCategory="文本" Tab="尺寸" displayValue="108" modified="2019-05-10T11:18:16" name="Drafting_dimTextColor_MU" title="格式 - 颜色" value="108"/>
 <Pref Application="制图标准" Category="视图" SubCategory="投影" Tab="标签" displayValue="" modified="2012-12-20T16:10:46" name="Drafting_projectedVwLabelScaleLabelPrefix" title="视图比例 - 前缀" value=""/>
 <Pref Application="制图标准" Category="视图" SubCategory="公共" Tab="隐藏线" displayValue="否" modified="2012-12-20T16:10:46" name="Drafting_displayInterferenceCurvesSolids" title="干涉实体 - 显示干涉曲线" value="false"/>
 <Pref Application="制图标准" Category="视图" SubCategory="公共" Tab="可见线" displayValue="实体" modified="2019-04-16T14:21:09" name="Drafting_visFont" title="格式 - 样式" value="1"/>
@@ -880,7 +880,7 @@
 <Pref Application="制图标准" Category="视图" SubCategory="公共" Tab="配置" displayValue="精确" modified="2012-12-20T16:10:46" name="Drafting_representation" title="设置 - 表示" value="0"/>
 <Pref Application="制图标准" Category="表" SubCategory="孔表" Tab="格式" displayValue="3" modified="2012-12-20T16:10:46" name="DR_HOLEREPORT_PRECISION_EU" title="小数位数" value="3"/>
 <Pref Application="制图标准" Category="尺寸" SubCategory="公差" Tab="公差" displayValue="H" modified="2012-12-20T16:10:46" name="Drafting_toleranceDeviation" title="限制和配合 - 孔偏差" value="H"/>
-<Pref Application="制图标准" Category="尺寸" SubCategory="文本" Tab="尺寸" displayValue="细线宽度" modified="2012-12-20T16:10:46" name="Drafting_dimTextWidth" title="格式 - 宽度" value="3"/>
+<Pref Application="制图标准" Category="尺寸" SubCategory="文本" Tab="尺寸" displayValue="正常宽度" modified="2019-05-10T11:18:16" name="Drafting_dimTextWidth" title="格式 - 宽度" value="1"/>
 <Pref Application="制图标准" Category="注释" SubCategory="焊接符号" Tab="设置" displayValue="1.0" modified="2012-12-20T16:10:46" name="Drafting_weldSymbolStandard_weldSymbolSizeFactor" title="焊接符号大小因子" value="1.0"/>
 <Pref Application="制图标准" Category="注释" SubCategory="焊接符号" Tab="自动焊接" displayValue="3/4 高度" modified="2014-12-24T16:10:46" name="Weld_DraftFractionType" title="分数 - 分数类型" value="2"/>
 <Pref Application="制图标准" Category="图纸格式" SubCategory="图纸页" Tab="尺寸和比例" displayValue="1.0" modified="2012-12-20T16:10:46" name="Drafting_drawingScaleDen" title="比例 - 分母" value="1.0"/>
@@ -984,7 +984,7 @@
 <Pref Application="制图标准" Category="注释" SubCategory="目标点符号" Tab="目标" displayValue="0.0" modified="2012-12-20T16:10:46" name="Drafting_targetPointAngle" title="设置 - 角度" value="0.0"/>
 <Pref Application="制图标准" Category="尺寸" SubCategory="尺寸集" Tab="尺寸集" displayValue="0.5" modified="2012-12-20T16:10:46" name="Drafting_baselineDimensionOffset_EU" title="偏置 - 基线" value="0.5"/>
 <Pref Application="制图标准" Category="符号" SubCategory="工作流程" Tab="工作流程" displayValue="使用当前" modified="2012-12-20T16:10:46" name="Drafting_symbolInstanceDialogSymbolColor" title="设置 - 几何体首选项" value="1"/>
-<Pref Application="制图标准" Category="视图" SubCategory="公共" Tab="配置" displayValue="从体" modified="2012-12-20T16:10:46" name="Drafting_wireframeColorSource" title="设置 - 线框颜色源" value="0"/>
+<Pref Application="制图标准" Category="视图" SubCategory="公共" Tab="配置" displayValue="从面" modified="2019-05-10T11:10:17" name="Drafting_wireframeColorSource" title="设置 - 线框颜色源" value="1"/>
 <Pref Application="制图标准" Category="尺寸" SubCategory="孔标注" Tab="螺纹孔" displayValue="" modified="2012-12-20T16:10:46" name="Drafting_ThreadedHole_Pitch_Suffix" title="螺距后缀" value=""/>
 <Pref Application="制图标准" Category="表" SubCategory="零件明细表" Tab="工作流程" displayValue="开" modified="2012-12-20T16:10:46" name="Drafting_plistAutoUpdate" title="格式 - 自动更新" value="1"/>
 <Pref Application="制图标准" Category="表" SubCategory="孔表" Tab="格式" displayValue="基本面" modified="2012-12-20T16:10:46" name="DR_HOLEREPORT_DEPTH_DATUM" title="深度测量基准" value="1"/>
