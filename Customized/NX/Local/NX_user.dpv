@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet type="text/xsl" href="NX_user.xsl"?>
+<PrefValues defaultLockStatus="unlocked">
+<Pref Application="基本环境" Category="用户界面" Tab="Predict Commands" displayValue="否" modified="2019-05-28T00:56:32" name="UG_predictCommandsGlobal" title="Predict Commands" value="false"/>
+</PrefValues>
