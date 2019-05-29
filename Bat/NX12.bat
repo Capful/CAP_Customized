@@ -1,52 +1,123 @@
 @echo off
-
-rem CAP Customized 主目录
+set NX_Name=NX 12.0
+set NX_Name_A=NX120
 set Capful=D:\CAP Customized
+set CAP_Template=%Capful%\NX Template\
+set CAP_Post=%Capful%\Postprocessor\
+set Backup=%Capful%\Backup\%NX_Name%\
+set Customized=%Capful%\Customized\
 
-rem CAP Customized 模板目录
-set Template=%Capful%\Template\
+if exist "%Capful%\bat\NX12.ini" (	
+	for /f "delims== tokens=1*" %%a in ('type "%Capful%\bat\NX12.ini" ^|findstr /i "NX12"') do  set "NX=%%b"
+	echo --------------------------------------------------
+    echo *                                                *
+    echo *               %NX_Name%已安装                    *
+	echo *                                                *
+    echo --------------------------------------------------
+	Goto Y
+) else (
+	Goto N
+)
 
-rem CAP Customized 后处理目录
-set post=%Capful%\Postprocessor\
+:Y 
+set Meun=%NX%\MACH\resource\template_set\
+set Post=%NX%\MACH\resource\Postprocessor\
+set Template=%NX%\LOCALIZATION\prc\simpl_chinese\startup\
+set Local=%LocalAppData%\Siemens\%NX_Name_A%\
+echo.
+echo	安装目录      	%NX%
+echo	菜单文件      	%Meun%
+echo	后处理文件      %Post%
+echo	模板文件      	%Template%
+echo	用户文件      	%Local%
+echo .
+if not exist "%Backup%"con md "%Backup%"
+if not exist "%Backup%Local"con md "%Backup%Local"
+echo --------------------------------------------------
+if exist "%Backup%cam_general.opt" (	
+	echo .加工菜单文件          已存在备份
+	echo .
+) else (
+	echo .创建 加工菜单文件     备份
+	echo .
+	copy /y "%Meun%cam_general.opt" "%Backup%" 
+)
+echo .替换加工菜单文件..
+echo .
+copy /y "%CAP_Template%cam_general.opt" "%Meun%"
+echo .
+echo --------------------------------------------------
+if exist "%Backup%template_post.dat" (	
+	echo .后处理菜单文件        已存在备份
+	echo .
+) else (
+	echo .创建 后处理菜单文件   备份
+	echo .
+	copy /y "%Post%template_post.dat" "%Backup%" 
+)
+echo .替换后处理菜单文件..
+echo .
+copy /y "%CAP_Post%template_post.dat" "%Post%"
+echo .
+echo .替换后处理文件..
+echo .
+copy /y "%CAP_Post%*.*" "%Post%"
+echo .
+echo .--------------------------------------------------
+if exist "%Backup%ugs_model_templates_simpl_chinese.pax" (	
+	echo .系统模板              已存在备份
+	echo .
+) else (
+	echo .创建 系统模板         备份
+	echo .
+	copy /y "%Template%ugs_model_templates_simpl_chinese.pax" "%Backup%" 
+)
+echo .替换系统模板文件..
+echo .
+copy /y "%CAP_Template%ugs_model_templates_simpl_chinese.pax" "%Template%"
+echo .
+echo --------------------------------------------------
+if exist "%Backup%Local\history.pax" (	
+	echo .用户信息文件          已存在备份
+	echo .
+) else (
+	echo .创建 用户信息文件     备份
+	echo .
+	copy /y "%Local%*.*" "%Backup%Local\" 
+)
+echo .替换用户信息文件..
+echo .
+copy /y "%Customized%NX\Local\*.*" "%Local%"
+echo .
+echo .替换制图模板文件..
+echo .
+copy /y "%CAP_Template%nx_Capful_Drafting_Standard_User.dpv" "%Local%"
+echo .
+echo --------------------------------------------------
+if exist "%Backup%ug_main.men" (	
+	echo .界面标题文件          已存在备份
+	echo .
+) else (
+	echo .创建 界面标题文件     备份
+	echo .
+	copy /y "%NX%\UGII\menus\ug_main.men" "%Backup%" 
+)
+echo .替换界面标题文件
+echo .
+copy /y "%Customized%NX\nx12_ug_main.men" "%NX%\UGII\menus\ug_main.men"
+echo .
+echo --------------------------------------------------
 
-rem 备份目录
-set backup=%Capful%\backup\
+Goto Done
 
-for /f "delims== tokens=1*" %%a in ('type "%Capful%\bat\NX12.ini" ^|findstr /i "NX12"') do  set "NX12=%%b"
-echo ===============================================================
-echo.
-echo NX12安装路径为%NX12%
-echo.
-set "NX12meun=%NX12%\MACH\resource\template_set\"
-set "NX12post=%NX12%\MACH\resource\Postprocessor\"
-set "NX12moban=%NX12%\LOCALIZATION\prc\simpl_chinese\startup\"
-echo.
-echo 创建NX12备份
-echo.
-if not exist "%backup%NX 12.0"con md "%backup%NX 12.0"
-if not exist "%backup%NX 12.0\cam_general.bak" copy /y "%NX12meun%cam_general.opt" "%backup%NX 12.0\cam_general.bak"
-if not exist "%backup%NX 12.0\template_post.bak" copy /y "%NX12post%template_post.dat" "%backup%NX 12.0\template_post.bak"
-if not exist "%backup%NX 12.0\ugs_model_templates_simpl_chinese.bak" copy /y "%NX12moban%ugs_model_templates_simpl_chinese.pax" "%backup%NX 12.0\ugs_model_templates_simpl_chinese.bak"
-echo.
-echo 替换NX12加工模板菜单..
-copy /y "%Template%cam_general.opt" "%NX12meun%"
-echo.
-echo.
-echo 替换NX12制图模板..
-copy /y "%Template%nx_Capful_Drafting_Standard_User.dpv" "%LocalAppData%\Siemens\NX120"
-echo.
-echo 替换NX 12后处理菜单
-copy /y "%post%template_post.dat" "%NX12post%"
-echo.
-echo 替换NX 12系统模板菜单
-copy /y "%Template%ugs_model_templates_simpl_chinese.pax" "%NX12moban%"
-echo.
-echo 复制NX 12后处理
-copy /y "%post%post.def" "%NX12post%"
-copy /y "%post%post.tcl" "%NX12post%"
-copy /y "%post%ugpost_base_group1.tcl" "%NX12post%"
-echo.
-echo ===============================================================
+:N
+echo --------------------------------------------------
+echo *                                                *
+echo *               %NX_Name%未安装                    *
+echo *                                                *
+echo --------------------------------------------------
+Goto Done
+
+:Done
 pause
 exit
-

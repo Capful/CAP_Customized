@@ -1,64 +1,169 @@
 @echo off
-rem 设置变量
-rem CAP Customized 主目录
+set NX_Name=NX 10.0
+set NX_Name_A=NX100
 set Capful=D:\CAP Customized
+set CAP_Template=%Capful%\NX Template\
+set CAP_Post=%Capful%\Postprocessor\
+set Backup=%Capful%\Backup\%NX_Name%\
+set Customized=%Capful%\Customized\
 
-rem CAP Customized 后处理目录
-set post=%Capful%\Postprocessor\
+if exist "%Capful%\bat\NX10.ini" (	
+	for /f "delims== tokens=1*" %%a in ('type "%Capful%\bat\NX10.ini" ^|findstr /i "NX10"') do  set "NX=%%b"
+	echo --------------------------------------------------
+    echo *                                                *
+    echo *               %NX_Name%已安装                    *
+	echo *                                                *
+    echo --------------------------------------------------
+	Goto Y
+) else (
+	Goto N
+)
 
-rem 备份目录
-set backup=%Capful%\backup\
+:Y 
+set Meun=%NX%\MACH\resource\template_set\
+set Post=%NX%\MACH\resource\Postprocessor\
+set Template=%NX%\LOCALIZATION\prc\simpl_chinese\startup\
+set Local=%LocalAppData%\Siemens\%NX_Name_A%\
+echo.
+echo	安装目录      	%NX%
+echo	菜单文件      	%Meun%
+echo	后处理文件      %Post%
+echo	模板文件      	%Template%
+echo	用户文件      	%Local%
+echo .
+echo --------------------------------------------------
+set A=cam_general.opt
+echo .
+if exist "%Backup%%A%" (	
+    echo .
+	echo .移除加工菜单文件
+	echo .
+	del /q "%Meun%%A%"
+	echo .
+	echo .恢复加工菜单文件
+	echo .
+	copy /y "%Backup%%A%" "%Meun%"
+	echo .
+	echo .移除加工菜单备份文件
+	echo .
+	del /q "%Backup%%A%"
+	echo .
+) else (
+	echo .加工菜单备份文件不存在！
+)
+echo --------------------------------------------------
+echo .
+echo --------------------------------------------------
+set B=template_post.dat
+echo .
+if exist "%Backup%%B%" (	
+    echo .
+	echo .移除后处理菜单文件
+	echo .
+	del /q "%Post%%B%"
+	echo .
+	echo .恢复后处理菜单文件
+	echo .
+	copy /y "%Backup%%B%" "%Post%"
+	echo .
+	echo .移除后处理文件
+    echo.
+    del /q "%Post%post.def"
+    del /q "%Post%post.tcl"
+    del /q "%Post%ugpost_base_group1.tcl"
+	echo.
+	echo .移除后处理备份文件
+	echo .
+	del /q "%Backup%%B%"
+	echo .
+) else (
+	echo .后处理备份文件不存在！
+)
+echo --------------------------------------------------
+echo .
+echo --------------------------------------------------
+set C=ugs_model_templates_simpl_chinese.pax
+echo .
+if exist "%Backup%%C%" (	
+    echo .
+	echo .移除系统模板文件
+	echo .
+	del /q "%Template%%C%"
+	echo .
+	echo .恢复系统模板文件
+	echo .
+	copy /y "%Backup%%C%" "%Template%"
+	echo .
+	echo .移除系统模板备份文件
+	echo .
+	del /q "%Backup%%C%"
+	echo .
+) else (
+	echo .系统模板备份文件不存在！
+)
+echo --------------------------------------------------
+echo .
+echo --------------------------------------------------
+set D=Local\history.pax
+set D1=nx_Capful_Drafting_Standard_User.dpv
+echo .
+if exist "%Backup%%D%" (
+    echo .
+	echo .移除制图模板文件	
+    del /q "%Local%%D1%"
+    echo .
+	echo .移除用户信息文件
+	echo .
+	del /q "%Local%*.*"
+	echo .
+	echo .恢复用户信息文件
+	echo .
+	copy /y "%Backup%Local\*.*" "%Local%"
+	echo .
+	echo .移除用户信息备份文件
+	echo .
+	del /q "%Backup%Local\*.*"
+	echo .
+) else (
+	echo .用户信息备份文件不存在！
+)
+echo --------------------------------------------------
+echo .
+echo --------------------------------------------------
+set F=\UGII\menus\ug_main.men
+set F1=ug_main.men
+echo .
+if exist "%Backup%%F1%" (	
+    echo .
+	echo .移除标题文件
+	echo .
+	del /q "%NX%%F%"
+	echo .
+	echo .恢复标题文件
+	echo .
+	copy /y "%Backup%%F1%" "%NX%%F%"
+	echo .
+	echo .移除标题备份文件
+	echo .
+	del /q "%Backup%%F1%"
+	echo .
+) else (
+	echo .标题备份文件不存在！
+)
+echo --------------------------------------------------
+echo .删除备份文件夹
+rmdir /q /s "%Capful%\Backup"
+Goto Done
 
-for /f "delims== tokens=1*" %%a in ('type "%Capful%\bat\NX10.ini" ^|findstr /i "NX10"') do  set "NX10=%%b"
-echo ===============================================================
-echo.
-set "NX10meun=%NX10%\MACH\resource\template_set\"
-set "NX10post=%NX10%\MACH\resource\Postprocessor\"
-set "NX10moban=%NX10%\LOCALIZATION\prc\simpl_chinese\startup\"
-echo.
-echo 恢复NX 10模板菜单
-echo.
-if exist "%backup%NX 10.0\cam_general.bak" del /q "%NX10meun%cam_general.opt"
-copy /y "%backup%NX 10.0\cam_general.bak" "%NX10meun%"
-ren "%NX10meun%cam_general.bak" cam_general.opt
-echo.
-echo 移除NX 10模板备份
-echo.
-if exist "%NX10meun%cam_general.opt" del /q "%backup%NX 10.0\cam_general.bak"
-echo 恢复NX 10系统模板菜单
-echo.
-if exist "%backup%NX 10.0\ugs_model_templates_simpl_chinese.bak" del /q "%NX10moban%ugs_model_templates_simpl_chinese.pax"
-copy /y "%backup%NX 10.0\ugs_model_templates_simpl_chinese.bak" "%NX10moban%"
-ren "%NX10moban%ugs_model_templates_simpl_chinese.bak" ugs_model_templates_simpl_chinese.pax
-echo.
-echo 移除NX 10系统模板备份
-echo.
-if exist "%NX10moban%ugs_model_templates_simpl_chinese.pax" del /q "%backup%NX 10.0\ugs_model_templates_simpl_chinese.bak"
-echo.
-echo 移除NX 10制图模板
-echo.
-if exist "%LocalAppData%\Siemens\NX100\nx_Capful_Drafting_Standard_User.dpv" del /q "%LocalAppData%\Siemens\NX100\nx_Capful_Drafting_Standard_User.dpv"
-echo.
-echo 恢复NX 10后处理菜单
-echo.
-if exist "%backup%NX 10.0\template_post.bak" del /q "%NX10post%template_post.dat"
-copy /y "%backup%NX 10.0\template_post.bak" "%NX10post%"
-ren "%NX10post%template_post.bak" template_post.dat
-echo.
-echo 移除NX 10后处理备份
-echo.
-if exist "%NX10post%template_post.dat" del /q "%backup%NX 10.0\template_post.bak"
-echo.
-echo 移除NX 10后处理
-echo.
-del /q "%NX10post%post.def"
-del /q "%NX10post%post.tcl"
-del /q "%NX10post%ugpost_base_group1.tcl"
-rmdir /q /s "%backup%NX 10.0"
-rd "%backup%"
-echo.
-echo ===============================================================
+:N
+echo --------------------------------------------------
+echo *                                                *
+echo *               %NX_Name%未安装                    *
+echo *                                                *
+echo --------------------------------------------------
+Goto Done
 
+:Done
 pause
 exit
 

@@ -77,8 +77,12 @@ Section "基础文件" SEC_A1
   SetOutPath "$INSTDIR\Bat"
   SetOverwrite ifnewer
   File "Bat\*.*"
+  nsExec::Exec 'attrib +h "$INSTDIR\Bat"'
   SetOutPath "$INSTDIR\Icon"
   File "Icon\logo.ico"
+  nsExec::Exec 'attrib +h "$INSTDIR\Icon"'
+  SetOutPath "$INSTDIR\Customized"
+  File "Customized\*.*"
   #文件夹自定义图标
   StrCpy $0 "$INSTDIR"
   StrCpy $1 "$INSTDIR\icon\logo.ico"
@@ -91,8 +95,8 @@ SectionEnd
 
 Section "角色文件" SEC_A2
   SectionIn 2
-  SetOutPath "$INSTDIR\MyRole"
-  File "MyRole\*.*"
+  SetOutPath "$INSTDIR\MyUI"
+  File "MyUI\*.*"
 SectionEnd
 
 SectionGroupEnd
@@ -102,8 +106,8 @@ SectionGroup /e "加工模块"  SEC_B
 
 Section "编程模板/后处理" SEC_B1
   SectionIn RO
-  SetOutPath "$INSTDIR\Template"
-  File "Template\*.*"
+  SetOutPath "$INSTDIR\NX Template"
+  File "NX Template\*.*"
   SetOutPath "$INSTDIR\Postprocessor"
   File "Postprocessor\*.*"
   Call NX10
@@ -119,16 +123,16 @@ SectionGroup /e "设计模块" SEC_C
 Section "星创外挂" SEC_C1
   SetOutPath "$INSTDIR\XcDesignCam"
   File /r "XcDesignCam\*.*"
-; File /r "XcDesignCam\log\*.*"
+;  File /r "XcDesignCam\ugfonts\*.*"
 ; 添加星创环境变量
   WriteRegExpandStr HKLM "SYSTEM\CurrentControlSet\Control\Session Manager\Environment" "UGII_USER_DIR" "$INSTDIR\XcDesignCam"
 ; 刷新环境变量
   SendMessage ${HWND_BROADCAST} ${WM_WININICHANGE} 0 "STR:Environment" /TIMEOUT=5000
 SectionEnd
 
-Section "燕秀CAD界面模板" SEC_C2
-  SetOutPath "$INSTDIR\CAD YanXiu"
-  File "CAD YanXiu\*.*"
+Section "CAD 模板" SEC_C2
+  SetOutPath "$INSTDIR\CAD Template"
+  File "CAD Template\*.*"
 SectionEnd
 
 SectionGroupEnd
@@ -136,9 +140,9 @@ SectionGroupEnd
 ; 区段组件描述
 !insertmacro MUI_FUNCTION_DESCRIPTION_BEGIN
 !insertmacro MUI_DESCRIPTION_TEXT ${SEC_A1} "Bat 批处理文件，执行相关配置"
-!insertmacro MUI_DESCRIPTION_TEXT ${SEC_A2} "NX10-NX1847角色文件"
+!insertmacro MUI_DESCRIPTION_TEXT ${SEC_A2} "NX10-NX(2019)角色文件及CAD燕秀界面"
 !insertmacro MUI_DESCRIPTION_TEXT ${SEC_C1} "定制的星创模具&电极设计外挂"
-!insertmacro MUI_DESCRIPTION_TEXT ${SEC_C2} "CAD 2018的燕秀外挂界面角色文件"
+!insertmacro MUI_DESCRIPTION_TEXT ${SEC_C2} "定制的CAD模板"
 !insertmacro MUI_DESCRIPTION_TEXT ${SEC_B1} "定制的UG编程模板/星创的机床后处理文件"
 
 !insertmacro MUI_FUNCTION_DESCRIPTION_END
@@ -341,20 +345,31 @@ Function .onInit
   Abort
   ;关闭进程
   Push $R0
-  CheckProc:
+  Push $R1
+  CheckProcUG:
   Push "ugraf.exe"
   ProcessWork::existsprocess
   Pop $R0
-  IntCmp $R0 0 Done
+  IntCmp $R0 0 CheckProcCAD
   MessageBox MB_OKCANCEL|MB_ICONSTOP "安装程序检测到 UG 正在运行。$\r$\n$\r$\n点击 “确定” 强制关闭UG，请确认保存UG文档。$\r$\n点击 “取消” 退出安装程序。" IDCANCEL Exit
   Push "ugraf.exe"
   Processwork::KillProcess
+  CheckProcCAD:
+  Push "acad.exe"
+  ProcessWork::existsprocess
+  Pop $R1
+  IntCmp $R1 0 Done
+  MessageBox MB_OKCANCEL|MB_ICONSTOP "安装程序检测到 CAD 正在运行。$\r$\n$\r$\n点击 “确定” 强制关闭UG，请确认保存CAD文档。$\r$\n点击 “取消” 退出安装程序。" IDCANCEL Exit
+  Push "acad.exe"
+  Processwork::KillProcess
   Sleep 1000
-  Goto CheckProc
+  Goto CheckProcUG
+  Goto CheckProcCAD  
   Exit:
   Abort
   Done:
   Pop $R0
+  Pop $R1
 FunctionEnd
 
 
@@ -377,16 +392,26 @@ SectionEnd
 Function un.onInit
   ;关闭进程
   Push $R0
-  CheckProc:
+  Push $R1
+  CheckProcUG:
   Push "ugraf.exe"
   ProcessWork::existsprocess
   Pop $R0
-  IntCmp $R0 0 Done
-  MessageBox MB_OKCANCEL|MB_ICONSTOP "卸载程序检测到 UG 正在运行。$\r$\n$\r$\n点击 “确定” 强制关闭UG，请确认保存UG文档。$\r$\n点击 “取消” 退出卸载程序。" IDCANCEL Exit
+  IntCmp $R0 0 CheckProcCAD
+  MessageBox MB_OKCANCEL|MB_ICONSTOP "安装程序检测到 UG 正在运行。$\r$\n$\r$\n点击 “确定” 强制关闭UG，请确认保存UG文档。$\r$\n点击 “取消” 退出安装程序。" IDCANCEL Exit
   Push "ugraf.exe"
   Processwork::KillProcess
+  CheckProcCAD:
+  Push "acad.exe"
+  ProcessWork::existsprocess
+  Pop $R1
+  IntCmp $R1 0 Done
+  MessageBox MB_OKCANCEL|MB_ICONSTOP "安装程序检测到 CAD 正在运行。$\r$\n$\r$\n点击 “确定” 强制关闭UG，请确认保存CAD文档。$\r$\n点击 “取消” 退出安装程序。" IDCANCEL Exit
+  Push "acad.exe"
+  Processwork::KillProcess
   Sleep 1000
-  Goto CheckProc
+  Goto CheckProcUG
+  Goto CheckProcCAD  
   Exit:
   Abort
   Done:
@@ -397,6 +422,7 @@ Function un.onInit
   Call un.NX12
   Call un.NX1847
   Pop $R0
+  Pop $R1
 FunctionEnd
 
 Function un.NX10
