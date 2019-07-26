@@ -1,14 +1,14 @@
 @echo off
-set NX_Name=NX 11.0
-set NX_Name_A=NX110
+set NX_Name=NX 1872
+set NX_Name_A=NX1872
 set Capful=D:\CAP Customized
 set CAP_Template=%Capful%\NX Template\
 set CAP_Post=%Capful%\Postprocessor\
 set Backup=%Capful%\Backup\%NX_Name%\
 set Customized=%Capful%\Customized\
 
-if exist "%Capful%\bat\NX11.ini" (	
-	for /f "delims== tokens=1*" %%a in ('type "%Capful%\bat\NX11.ini" ^|findstr /i "NX11"') do  set "NX=%%b"
+if exist "%Capful%\bat\NX1872.ini" (	
+	for /f "delims== tokens=1*" %%a in ('type "%Capful%\bat\NX1872.ini" ^|findstr /i "NX1872"') do  set "NX=%%b"
 	echo --------------------------------------------------
     echo *                                                *
     echo *               %NX_Name%已安装                    *
@@ -104,7 +104,7 @@ if exist "%Backup%ug_main.men" (
 )
 echo .替换界面标题文件
 echo .
-xcopy "%Customized%NX\nx11_ug_main.men" "%NX%\UGII\menus\ug_main.men" /c /e /r /y /s
+xcopy "%Customized%NX\nx1872_ug_main.men" "%NX%\UGII\menus\ug_main.men" /c /e /r /y /s
 echo .
 echo --------------------------------------------------
 

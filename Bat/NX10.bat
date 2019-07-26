@@ -40,11 +40,11 @@ if exist "%Backup%cam_general.opt" (
 ) else (
 	echo .创建 加工菜单文件     备份
 	echo .
-	copy /y "%Meun%cam_general.opt" "%Backup%" 
+	xcopy "%Meun%cam_general.opt" "%Backup%" /c /e /r /y /s
 )
 echo .替换加工菜单文件..
 echo .
-copy /y "%CAP_Template%cam_general.opt" "%Meun%"
+xcopy "%CAP_Template%cam_general.opt" "%Meun%" /c /e /r /y /s
 echo .
 echo --------------------------------------------------
 if exist "%Backup%template_post.dat" (	
@@ -53,15 +53,15 @@ if exist "%Backup%template_post.dat" (
 ) else (
 	echo .创建 后处理菜单文件   备份
 	echo .
-	copy /y "%Post%template_post.dat" "%Backup%" 
+	xcopy "%Post%template_post.dat" "%Backup%"  /c /e /r /y /s
 )
 echo .替换后处理菜单文件..
 echo .
-copy /y "%CAP_Post%template_post.dat" "%Post%"
+xcopy "%CAP_Post%template_post.dat" "%Post%" /c /e /r /y /s
 echo .
 echo .替换后处理文件..
 echo .
-copy /y "%CAP_Post%*.*" "%Post%"
+xcopy "%CAP_Post%*.*" "%Post%" /c /e /r /y /s
 echo .
 echo .--------------------------------------------------
 if exist "%Backup%ugs_model_templates_simpl_chinese.pax" (	
@@ -70,11 +70,11 @@ if exist "%Backup%ugs_model_templates_simpl_chinese.pax" (
 ) else (
 	echo .创建 系统模板         备份
 	echo .
-	copy /y "%Template%ugs_model_templates_simpl_chinese.pax" "%Backup%" 
+	xcopy  "%Template%ugs_model_templates_simpl_chinese.pax" "%Backup%" /c /e /r /y /s
 )
 echo .替换系统模板文件..
 echo .
-copy /y "%CAP_Template%ugs_model_templates_simpl_chinese.pax" "%Template%"
+xcopy "%CAP_Template%ugs_model_templates_simpl_chinese.pax" "%Template%" /c /e /r /y /s
 echo .
 echo --------------------------------------------------
 if exist "%Backup%Local\history.pax" (	
@@ -83,15 +83,15 @@ if exist "%Backup%Local\history.pax" (
 ) else (
 	echo .创建 用户信息文件     备份
 	echo .
-	copy /y "%Local%*.*" "%Backup%Local\" 
+	xcopy "%Local%*.*" "%Backup%Local\"  /c /e /r /y /s
 )
 echo .替换用户信息文件..
 echo .
-copy /y "%Customized%NX\Local\*.*" "%Local%"
+xcopy "%Customized%NX\Local\*.*" "%Local%" /c /e /r /y /s
 echo .
 echo .替换制图模板文件..
 echo .
-copy /y "%CAP_Template%nx_Capful_Drafting_Standard_User.dpv" "%Local%"
+xcopy "%CAP_Template%nx_Capful_Drafting_Standard_User.dpv" "%Local%" /c /e /r /y /s
 echo .
 echo --------------------------------------------------
 if exist "%Backup%ug_main.men" (	
@@ -100,11 +100,11 @@ if exist "%Backup%ug_main.men" (
 ) else (
 	echo .创建 界面标题文件     备份
 	echo .
-	copy /y "%NX%\UGII\menus\ug_main.men" "%Backup%" 
+	xcopy "%NX%\UGII\menus\ug_main.men" "%Backup%"  /c /e /r /y /s
 )
 echo .替换界面标题文件
 echo .
-copy /y "%Customized%NX\nx10_ug_main.men" "%NX%\UGII\menus\ug_main.men"
+xcopy "%Customized%NX\nx10_ug_main.men" "%NX%\UGII\menus\ug_main.men" /c /e /r /y /s
 echo .
 echo --------------------------------------------------
 

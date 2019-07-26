@@ -2,5 +2,13 @@
 
 <?xml-stylesheet type="text/xsl" href="NX_user.xsl"?>
 <PrefValues defaultLockStatus="unlocked">
-<Pref Application="基本环境" Category="用户界面" Tab="Predict Commands" displayValue="否" modified="2019-05-28T00:56:32" name="UG_predictCommandsGlobal" title="Predict Commands" value="false"/>
+<Pref Application="加工" Category="仿真与可视化" Tab="常规" displayValue="3D 动态" modified="2019-07-19T05:44:08" name="CAM_vsz_ui_page" title="用户界面 - 开始页面" value="2"/>
+<Pref Application="基本环境" Category="用户界面" Tab="预测命令" displayValue="否" modified="2019-05-28T00:56:32" name="UG_predictCommandsGlobal" title="预测命令" value="false"/>
+<Pref Application="加工" Category="工序" Tab="常规" displayValue="是" modified="2019-07-19T05:48:44" name="CAM_opr_stepover_applied_on_plane_opt" title="原有 - 允许在区域铣削中使用平面上步进选项" value="true"/>
+<Pref Application="草图" Category="自动判断约束和尺寸" Tab="尺寸" displayValue="否" modified="2019-07-19T05:44:08" name="Sketch_continuousAutoDimensioningDesign" title="在设计应用程序中连续自动标注尺寸" value="0"/>
+<Pref Application="加工" Category="工序" Tab="常规" displayValue="否" modified="2019-07-19T05:48:44" name="CAM_autoset_machining_data" title="加工数据 - 在工序中自动设置" value="0"/>
+<Pref Application="制图" Category="常规/设置" Tab="标准" displayValue="Capful" modified="2019-07-19T05:44:08" name="Drafting_Standard" title="制图标准" value="Capful"/>
+<Pref Application="基本环境" Category="可视化" Tab="直线" displayValue="否" modified="2019-07-19T05:33:38" name="UG_widthDisplay" title="线宽 - 显示线宽" value="2"/>
+<Pref Application="加工" Category="仿真与可视化" Tab="IPW 颜色" displayValue="刀具更改时的循环颜色" modified="2019-07-19T05:09:45" name="CAM_vsz_ipw_dmr_coloring_method" title="常规 - 配色方法" value="1"/>
+<Pref Application="加工" Category="工序" Tab="常规" displayValue="是" modified="2019-07-19T05:48:44" name="CAM_opr_drive_method_opt" title="原有 - 允许在固定轮廓铣中使用原有驱动方法" value="true"/>
 </PrefValues>

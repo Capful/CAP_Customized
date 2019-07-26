@@ -1,228 +1,0 @@
-﻿REGEDIT4
-
-[HKEY_CURRENT_USER\Software\Unigraphics Solutions\NX\1847\General\ANT\Columns]
-"Column Headers"="PART_NAME,On,230INFO,On,36COMPONENT_NAME,Off,100COMPONENT_REFLECTION_STATE,Off,24FILE_NAME,Off,250WRITABLE,On,24MODIFIED,On,24POSITION,Off,24COUNT,On,50REFERENCE_SET,On,100OUT_OF_DATE,Off,24FILE_DESCRIPTION,Off,75UNITS,Off,30MASS_LB,Off,50MASS_GM,Off,50MASS_KG,Off,50MASS_STATUS,Off,24COLOR,Off,50LAYER,Off,50SHAPE,Off,24CONFIG,Off,50POSITION_CONTROL,Off,100SUPPRESSION_CONTROL,Off,100FILTERED_NODE,Off,24MULTI_CAD,Off,24PRODUCT INTERFACES,Off,24ALERTS,Off,100CALLOUT,Off,50QUANTITY,Off,24LOAD STATE,Off,75CHECKMATE RESULT,Off,24REPRESENTATION,Off,150DRAWINGS_SECONDARY_COMPONENT,Off,24"
-"FrozenColumns"=dword:00000001
-[HKEY_CURRENT_USER\Software\Unigraphics Solutions\NX\1847\General\ANT\Mode]
-"Mode"="Normal"
-"VRFilterMode"="On"
-"ShowSuppressed"="Yes"
-"ShowConstraints"="Yes"
-"ShowNonGeometric"="Yes"
-"ShowReferenceOnly"="Yes"
-"ShowSections"="Yes"
-[HKEY_CURRENT_USER\Software\Unigraphics Solutions\NX\1847\General\ANT\Preselect]
-"Preselect"="Enabled"
-[HKEY_CURRENT_USER\Software\Unigraphics Solutions\NX\1847\General\ANT\WindowState\Dialogs\Dependencies]
-"Expanded"=dword:00000000
-[HKEY_CURRENT_USER\Software\Unigraphics Solutions\NX\1847\General\ANT\WindowState\Dialogs\Preview]
-"Expanded"=dword:00000000
-[HKEY_CURRENT_USER\Software\Unigraphics Solutions\NX\1847\General\ANT\WindowState]
-"DialogsVisible"=dword:00000001
-[HKEY_CURRENT_USER\Software\Unigraphics Solutions\NX\1847\General\Assemblies\Application]
-"Status"=dword:00000001
-[HKEY_CURRENT_USER\Software\Unigraphics Solutions\NX\1847\General\DBW]
-"Detailed View Display Mode"=dword:00000000
-[HKEY_CURRENT_USER\Software\Unigraphics Solutions\NX\1847\General\Drafting\Preferences]
-"Dogleg Option"=dword:00000000
-"Margin First Offset Metric"="40.000000"
-"Margin Spacing Metric"="10.000000"
-"Margin Number"=dword:00000002
-[HKEY_CURRENT_USER\Software\Unigraphics Solutions\NX\1847\General\EasyTL\Columns]
-"..UGS::ModlFeatureUI::CopyPaste"="10 185"
-"Geometry::geometryList"="50 110 100 10"
-"Point Set List"="10 10 10 165"
-"MultipleList::multipleList"="100 100 100 10"
-"StockPerPassList::stockPerPassList"="100 100 10"
-"HolderSectionList::holderSectionList"="100 100 100 100 100 100 10"
-"Boundary::boundaryList"="100 100 100 10"
-"Boundary::memberList"="70 70 70 65"
-"LeaderBuilder::leaders"="50 100 50 10"
-"TextWithSymbolsBuilder::customSymbolList"="100 100 10"
-[HKEY_CURRENT_USER\Software\Unigraphics Solutions\NX\1847\General\FILENEW\Tab Name]
-"Tab Name"="模型"
-[HKEY_CURRENT_USER\Software\Unigraphics Solutions\NX\1847\General\FILENEW\Template Name]
-"Template Name"="D:\CAP Customized\Template\Capful-Template.prt"
-[HKEY_CURRENT_USER\Software\Unigraphics Solutions\NX\1847\General\KF\Application]
-"Status"=dword:00000000
-[HKEY_CURRENT_USER\Software\Unigraphics Solutions\NX\1847\General\KF\Columns]
-"Column Headers"="NAME,On,200:VALUE,On,100:OBJECT_NAME,Off,100"
-[HKEY_CURRENT_USER\Software\Unigraphics Solutions\NX\1847\General\KF\Search Directories]
-"Search Directories"=""
-[HKEY_CURRENT_USER\Software\Unigraphics Solutions\NX\1847\General\KRUNAV\Libraries]
-"ReuseLibraryShowFrequentTerms"=dword:00000001
-"ReuseLibraryFrequentTermsNumber"=dword:00000006
-"ReuseLibraryHierarchyInformation"=dword:00000000
-"ReuseLibraryMatchUnits"=dword:00000000
-"ReuseLibrarySearchWithFrequentTerm"=dword:00000001
-"ReuseLibraryCreateIndexForAttribute"=dword:00000000
-"ReuseLibraryCreateIndexForExpression"=dword:00000000
-[HKEY_CURRENT_USER\Software\Unigraphics Solutions\NX\1847\General\Layout\ColorDialo]
-"Favorite_Group_Open"=dword:00000001
-"Favorite_Visible"=dword:00000001
-"Picker_Group_Open"=dword:00000000
-"Picker_Visible"=dword:00000001
-"Entry_Group_Open"=dword:00000001
-"Entry_Visible"=dword:00000001
-"Options_Group_Open"=dword:00000000
-"Options_Visible"=dword:00000000
-"Caption_State"=dword:00000000
-[HKEY_CURRENT_USER\Software\Unigraphics Solutions\NX\1847\General\MFNDP\WindowState]
-"DialogsVisible"=dword:00000001
-[HKEY_CURRENT_USER\Software\Unigraphics Solutions\NX\1847\General\MFN\WindowState\Dialogs\Details]
-"Expanded"=dword:00000000
-[HKEY_CURRENT_USER\Software\Unigraphics Solutions\NX\1847\General\MFN\WindowState\Dialogs\Preview]
-"Expanded"=dword:00000000
-[HKEY_CURRENT_USER\Software\Unigraphics Solutions\NX\1847\General\MFN\WindowState]
-"DialogsVisible"=dword:00000001
-[HKEY_CURRENT_USER\Software\Unigraphics Solutions\NX\1847\General\MTC\Columns]
-"Column Headers"="NAME,On,200:CLASSIFICATION,On,150:CHANNELS,Off,80:JUNCTIONS,On,250:AXIS_NAME,On,100:AXIS_NUMBER,Off,80:AXIS_INITIAL_VALUE,On,80:AXIS_NC_FLAG,On,80:AXIS_TYPE,Off,100:AXIS_LIMITS,Off,150:AXIS_SOFT_LIMITS,Off,150:TURRET_ID,Off,100:POCKET_ID,Off,100:HOLDING_SYSTEMS,Off,150:CHAINS,On,250"
-"Frozen Columns"=dword:00000000
-[HKEY_CURRENT_USER\Software\Unigraphics Solutions\NX\1847\General\MTC\WindowState]
-"DialogsVisible"=dword:00000001
-[HKEY_CURRENT_USER\Software\Unigraphics Solutions\NX\1847\General\ONTIP\WindowState]
-"DialogsVisible"=dword:00000001
-[HKEY_CURRENT_USER\Software\Unigraphics Solutions\NX\1847\General\ONT\Geometry_Views_Columns]
-"Column Headers"="NAME,On,200:PATH,On,50:IPW,Off,50:CHANNEL,Off,100:TOOL,On,100:TOOL_DESC,Off,100:DESCRIPTION,Off,100:NOTES,Off,100:HOLDER_DESC,Off,100:TOOLNUM,Off,100:TIME,Off,100:PATH LENGTH,Off,100:GEOMETRY,On,100:MCS,Off,100:METHOD,On,100:PART_STOCK,Off,100:FLOOR_STOCK,Off,100:DEPTHOFCUT,Off,100:STEPOVER,Off,100:MIN TOOL LENGTH,Off,100:FEED,Off,100:SPINDLE SPEED,Off,100:FEED RATE OPTIMIZED,Off,100:GROUP,Off,100:EDIT_STATUS,Off,100:GOUGE CHECK,Off,100:START UDE,Off,100:END UDE,Off,100:DEPENDENCIES,Off,100:WORK INSTRUCTIONS,Off,100:MATERIAL REMOVAL COLOR,Off,100"
-"FrozenColumns"=dword:00000001
-[HKEY_CURRENT_USER\Software\Unigraphics Solutions\NX\1847\General\ONT\Method_View_Columns]
-"Column Headers"="NAME,On,200:PATH,On,50:IPW,Off,50:CHANNEL,Off,100:TOOL,On,100:TOOL_DESC,Off,100:DESCRIPTION,Off,100:NOTES,Off,100:HOLDER_DESC,Off,100:TIME,Off,100:PATH LENGTH,Off,100:GEOMETRY,On,100:MCS,Off,100:METHOD,Off,100:PART_STOCK,Off,100:FLOOR_STOCK,Off,100:DEPTHOFCUT,Off,100:STEPOVER,Off,100:MIN TOOL LENGTH,Off,100:FEED,Off,100:SPINDLE SPEED,Off,100:FEED RATE OPTIMIZED,Off,100:GROUP,On,100:EDIT_STATUS,Off,100:GOUGE CHECK,Off,100:START UDE,Off,100:END UDE,Off,100:DEPENDENCIES,Off,100:WORK INSTRUCTIONS,Off,100:MATERIAL REMOVAL COLOR,Off,100"
-"FrozenColumns"=dword:00000001
-[HKEY_CURRENT_USER\Software\Unigraphics Solutions\NX\1847\General\ONT\Order_View_Columns]
-"Column Headers"="NAME,On,200:TOOLCHANGE,On,1:PATH,On,0:IPW,Off,50:CHANNEL,Off,100:TOOL,On,48:TOOL_DESC,Off,100:DESCRIPTION,Off,100:NOTES,Off,100:HOLDER_DESC,Off,100:TOOLNUM,On,0:TIME,On,70:PATH LENGTH,Off,100:GEOMETRY,On,0:MCS,Off,100:METHOD,On,0:PART_STOCK,Off,100:FLOOR_STOCK,On,100:DEPTHOFCUT,On,100:STEPOVER,Off,100:MIN TOOL LENGTH,Off,100:FEED,On,100:SPINDLE SPEED,On,100:FEED RATE OPTIMIZED,Off,100:GROUP,Off,100:EDIT_STATUS,Off,100:GOUGE CHECK,Off,100:START UDE,Off,100:END UDE,Off,100:DEPENDENCIES,Off,100:WORK INSTRUCTIONS,Off,100:MATERIAL REMOVAL COLOR,Off,100"
-"FrozenColumns"=dword:00000001
-[HKEY_CURRENT_USER\Software\Unigraphics Solutions\NX\1847\General\ONT\Tool_View_Columns]
-"Column Headers"="NAME,On,200:CHANNEL,Off,100:PATH,On,50:IPW,Off,50:TOOL,On,100:DESCRIPTION,On,150:NOTES,Off,100:HOLDER_DESC,Off,100:TOOLNUM,On,100:TIME,Off,100:PATH LENGTH,Off,100:GEOMETRY,On,100:MCS,Off,100:METHOD,On,100:PART_STOCK,Off,100:FLOOR_STOCK,Off,100:DEPTHOFCUT,Off,100:STEPOVER,Off,100:MIN TOOL LENGTH,Off,100:FEED,Off,100:SPINDLE SPEED,Off,100:FEED RATE OPTIMIZED,Off,100:GROUP,On,100:EDIT_STATUS,Off,100:CARRIER,Off,100:POCKET,Off,100:GOUGE CHECK,Off,100:START UDE,Off,100:END UDE,Off,100:DEPENDENCIES,Off,100:WORK INSTRUCTIONS,Off,100:MATERIAL REMOVAL COLOR,Off,100"
-"FrozenColumns"=dword:00000001
-[HKEY_CURRENT_USER\Software\Unigraphics Solutions\NX\1847\General\ONT\WindowState\Dialogs\Dependencies]
-"Expanded"=dword:00000000
-[HKEY_CURRENT_USER\Software\Unigraphics Solutions\NX\1847\General\ONT\WindowState\Dialogs\Details]
-"Expanded"=dword:00000000
-[HKEY_CURRENT_USER\Software\Unigraphics Solutions\NX\1847\General\ONT\WindowState]
-"DialogsVisible"=dword:00000001
-[HKEY_CURRENT_USER\Software\Unigraphics Solutions\NX\1847\General\PARTNT\WindowState\Dialogs\Dependencies]
-"Expanded"=dword:00000000
-[HKEY_CURRENT_USER\Software\Unigraphics Solutions\NX\1847\General\PARTNT\WindowState\Dialogs\Details]
-"Expanded"=dword:00000000
-[HKEY_CURRENT_USER\Software\Unigraphics Solutions\NX\1847\General\PARTNT\WindowState\Dialogs\Preview]
-"Expanded"=dword:00000000
-[HKEY_CURRENT_USER\Software\Unigraphics Solutions\NX\1847\General\PARTNT\WindowState]
-"DialogsVisible"=dword:00000001
-[HKEY_CURRENT_USER\Software\Unigraphics Solutions\NX\1847\General\PMI\Application]
-"Status"=dword:00000000
-[HKEY_CURRENT_USER\Software\Unigraphics Solutions\NX\1847\General\Palettes\Standard\Palette1]
-"URL"="C:\Users\HZK-PC\AppData\Local\Siemens\NX1847\history.pax"
-"TNL_WIDTH"=dword:00000144
-"TNL_VIEW"=dword:00000000
-[HKEY_CURRENT_USER\Software\Unigraphics Solutions\NX\1847\General\Palettes\Standard\Palette2]
-"URL"="UG/ProcessStudioWizard:Process Studio"
-"TNL_WIDTH"=dword:0000013c
-"TNL_VIEW"=dword:00000000
-[HKEY_CURRENT_USER\Software\Unigraphics Solutions\NX\1847\General\Palettes\Standard\Palette3]
-"URL"="UG/CAM_WIZARD_PAL:Manufacturing Wizards"
-"TNL_WIDTH"=dword:0000013c
-"TNL_VIEW"=dword:00000000
-[HKEY_CURRENT_USER\Software\Unigraphics Solutions\NX\1847\General\Palettes\Standard\Palette4]
-"URL"="UG/ROLE_SYSTEM_PAL:Roles"
-"TNL_WIDTH"=dword:0000013c
-"TNL_VIEW"=dword:00000003
-[HKEY_CURRENT_USER\Software\Unigraphics Solutions\NX\1847\General\Palettes\Standard\Palette5]
-"URL"="D:\Program Files\Siemens\NX\ugphoto\system_scene_data_dir\prepackaged_scenes.pax"
-"TNL_WIDTH"=dword:0000013c
-"TNL_VIEW"=dword:00000000
-[HKEY_CURRENT_USER\Software\Unigraphics Solutions\NX\1847\General\Palettes\Standard\Palette6]
-"URL"="D:\Program Files\Siemens\NX\mach\templates\CAM_Machine_Samples.pax"
-"TNL_WIDTH"=dword:0000013c
-"TNL_VIEW"=dword:00000000
-[HKEY_CURRENT_USER\Software\Unigraphics Solutions\NX\1847\General\PartNT\Columns]
-"Column Headers"="NAME,On,200CURRENT_FEATURE,On,24OUT_OF_DATE,On,24FEATURE_TYPE,Off,200TIMESTAMP,Off,100LAYER,Off,100COLOR,Off,100STATE,Off,100PARENT_INTERFACE,Off,100CREATED,Off,100MODIFIED,Off,100COMMENT,On,100REQUIREMENT_ID,Off,100PART_NAME,Off,100VALUE,Off,100CREATEDBY,Off,100MODIFIEDBY,Off,100ALERTS,Off,100VIEW_REPRESENTATION,Off,100SHEET_NUMBER,Off,100SHEET_REVISION,Off,100SHEET_EFFECTIVITY,Off,100ARRANGEMENT,Off,100FORMULA,Off,100DISCLOSURE,Off,100DISCLOSURE_PURPOSE,Off,100"
-[HKEY_CURRENT_USER\Software\Unigraphics Solutions\NX\1847\General\PartNT\Filters]
-"num_filters"=dword:00000006
-"filter:1"="Only Failed FeaturesUGS::PARTNAV_category_filterExcludeAllFeaturesUGS::PARTNAV_state_filterIncludeFailed"
-"filter:2"="Only Features With InformationUGS::PARTNAV_category_filterExcludeAllFeaturesUGS::PARTNAV_state_filterIncludeInformation"
-"filter:3"="Only Features With WarningsUGS::PARTNAV_category_filterExcludeAllFeaturesUGS::PARTNAV_state_filterIncludeUpdateWarning"
-"filter:4"="Only Suppressed FeaturesUGS::PARTNAV_category_filterExcludeAllFeaturesUGS::PARTNAV_state_filterIncludeSuppressed"
-"filter:5"="No Suppressed FeaturesUGS::PARTNAV_category_filterExcludeAllFeaturesUGS::PARTNAV_state_filterIncludeUnsuppressed"
-"filter:6"="Remove Up-to-Date FeaturesUGS::PARTNAV_category_filterExcludeAllFeaturesUGS::PARTNAV_state_filterIncludeOutOfDate"
-[HKEY_CURRENT_USER\Software\Unigraphics Solutions\NX\1847\General\PartNT\Properties]
-"AutoScroll"="Yes"
-"AutomaticallyCollapseGroups"="No"
-"DragDrop"="Yes"
-"MarkParents"="Yes"
-"ParentColor"=dword:000000b6
-"MarkChildren"="Yes"
-"ChildColor"=dword:0000008b
-"NameDisplay"="name_and_type"
-"FeatureCheckBoxAction"="hide"
-"HideOnUse"="No"
-"TreeMode"="timestamp"
-[HKEY_CURRENT_USER\Software\Unigraphics Solutions\NX\1847\General\Parts\Recent\Native]
-"UG Native part name 1"="H:\CNC-File\2019-5\兴鼎杰\050\050-滑块镶件.prt"
-"UG Native desc name 1"="<050-滑块镶件>"
-"UG Native part name 2"="H:\CNC-File\2019-5\兴鼎杰\CP-8-配件\CP-8-配件-分流锥.prt"
-"UG Native desc name 2"="<CP-8-配件-分流锥>"
-"UG Native part name 3"="H:\CNC-File\2019-5\兴鼎杰\CP-8-配件\Raw-File\1出2模具图更新19.05.14\3D\PEIJIAN_stp.prt"
-"UG Native desc name 3"="<PEIJIAN_stp>"
-"UG Native part name 4"="H:\CNC-File\2019-4\兴鼎杰\032-1X1\032-电极-编程.prt"
-"UG Native desc name 4"="<032-电极-编程>"
-"UG Native part name 5"="H:\CNC-File\2019-5\兴鼎杰\050\Raw-File\2017-050-10-20.prt"
-"UG Native desc name 5"="<2017-050-10-20>"
-"UG Native part name 6"=""
-"UG Native desc name 6"=""
-"UG Native part name 7"=""
-"UG Native desc name 7"=""
-"UG Native part name 8"=""
-"UG Native desc name 8"=""
-[HKEY_CURRENT_USER\Software\Unigraphics Solutions\NX\1847\General\Product Excellence Program]
-"Popup Handled"=dword:00000001
-"Participating"=dword:00000001
-[HKEY_CURRENT_USER\Software\Unigraphics Solutions\NX\1847\Hide_message]
-"GATEWAY_customer_defaults_save"="-2,1"
-"CGMInfoMessage"="-2,1"
-[HKEY_CURRENT_USER\Software\Unigraphics Solutions\NX\1847\Layout\Railing]
-"Frame Marker"=dword:ffffffff
-"Frame Pos X"=dword:00007fff
-"Frame Pos Y"=dword:00007fff
-"Clip Marker"=dword:00000001
-"Clip Pos"=dword:00000024
-"TearOff"=dword:00000000
-"Dimming"=dword:00000000
-"Dock Pos"=dword:00000000
-[HKEY_CURRENT_USER\Software\Unigraphics Solutions\NX\1847\Layout]
-"WelcomePageCount"=dword:00000002
-"UseMenuFolding"=dword:00000000
-"UseMenuFoldingDelay"=dword:00000000
-"InitialDialogDisplay"=dword:00000000
-"WarnUserMenubarLocked"=dword:00000001
-"ChevronOption"=dword:00000000
-"Save Layout"=dword:00000001
-"Main"="3,1936x1056+-1+-1,1843x998+38+21"
-"Stretch Graphics"=dword:00000000
-"UseTransparency"=dword:00000001
-"Information"="0,993x501+316+0,0x0+0+0"
-"DA1"="1940x1940+-10+-10"
-"DA2"="1940x1940+-10+-10"
-"FLOAT"="1940x1940+604+371"
-"FSB"="0x0+172+51"
-"DevelopmentExchange"=dword:00000001
-"Windows Style"=dword:00000000
-"Scheme Style"=dword:00000000
-"DraftingWelcomePageCount"=dword:00000001
-[HKEY_CURRENT_USER\Software\Unigraphics Solutions\NX\1847\Visualization]
-"Standard Font Date"=dword:0132b72b
-"hzk-pc hzk-pc:0.0 GeForce GTX 1050/PCIe/SSE2 configuration"="polyline_set=vbo,8:tri_set=vbo,8:tri_strip_set=vbo,8:"
-"Default Date"=dword:01329016
-"Fit to Environment Walls"=dword:00000001
-"Moving Frame Detail"="0.000000"
-"Moving Screen Cull"="0.000200"
-"Enable Moving Screen Cull"=dword:00000000
-"Moving Size Cull"="0.000000"
-"Enable Moving Size Cull"=dword:00000000
-"Still Frame Detail"="0.000000"
-"Still Screen Cull"="0.000100"
-"Enable Still Screen Cull"=dword:00000000
-"Still Size Cull"="0.000000"
-"Enable Still Size Cull"=dword:00000000
-"Translucency"=dword:00000001
-"Suppress Translucency Warning"=dword:00000001
-"Wireframe Contrast"=dword:00000000

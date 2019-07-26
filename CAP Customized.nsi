@@ -2,7 +2,7 @@
 
 ; 安装程序初始定义常量
 !define PRODUCT_NAME "CAP Customized"
-!define PRODUCT_VERSION "2.1.1905"
+!define PRODUCT_VERSION "2.2.0726"
 !define PRODUCT_PUBLISHER "Capful"
 !define PRODUCT_UNINST_KEY "Software\Microsoft\Windows\CurrentVersion\Uninstall\${PRODUCT_NAME}"
 !define PRODUCT_UNINST_ROOT_KEY "HKLM"
@@ -82,7 +82,7 @@ Section "基础文件" SEC_A1
   File "Icon\logo.ico"
   nsExec::Exec 'attrib +h "$INSTDIR\Icon"'
   SetOutPath "$INSTDIR\Customized"
-  File "Customized\*.*"
+  File /r "Customized\*.*"
   #文件夹自定义图标
   StrCpy $0 "$INSTDIR"
   StrCpy $1 "$INSTDIR\icon\logo.ico"
@@ -114,6 +114,7 @@ Section "编程模板/后处理" SEC_B1
   Call NX11
   Call NX12
   Call NX1847
+  Call NX1872
 SectionEnd
 SectionGroupEnd
 
@@ -314,6 +315,43 @@ Function NX1847
   Exch $0
 FunctionEnd
 
+Function NX1872
+  Push $R0
+  Push $0
+  ClearErrors
+#-----------------------------------------------------------------------
+#获取注册表键值
+  ReadRegStr $R0 HKLM \
+    "SOFTWARE\WOW6432Node\Unigraphics Solutions\Installed Applications" "Unigraphics V32.0"
+  IfFileExists $R0 0 no_nx   ;如果键值不存在则执行no_nx
+#-----------------------------------------------------------------------
+#获取上级目录，上三级目录
+  Push "$R0"
+  Call GetParent
+  Pop $R0
+  Push "$R0"
+  Call GetParent
+  Pop $R0
+#-----------------------------------------------------------------------
+#-----------------------------------------------------------------------
+#将路径写入文本
+;  MessageBox MB_OK "NX1872已安装,路径为：$R0"
+  FileOpen $0 "$INSTDIR\bat\NX1872.ini" w
+  FileWrite $0 'NX1872=$R0'
+  FileClose $0
+#----------------------------------------------------------------------
+#-----------------------------------------------------------------------
+#复制文件
+  nsExec::Exec "$INSTDIR\bat\NX1872.bat"
+#-----------------------------------------------------------------------
+  Goto end
+  no_nx:
+;  MessageBox MB_OK "NX1872未安装"
+  end:
+  Exch $R0
+  Exch $0
+FunctionEnd
+
 ;获取上级目录函数
 Function GetParent
   Exch $R0
@@ -487,6 +525,22 @@ Function un.NX1847
 #-----------------------------------------------------------------------
 #恢复文件
   nsExec::Exec "$INSTDIR\bat\RNX1847.bat"
+#-----------------------------------------------------------------------
+  Goto end
+  no_nx:
+  end:
+  Exch $R0
+FunctionEnd
+
+Function un.NX1872
+  Push $R0
+  ClearErrors
+#-----------------------------------------------------------------------
+#获取ini
+  IfFileExists "$INSTDIR\bat\NX1872.ini" 0 no_nx   ;如果文件不存在则执行no_nx
+#-----------------------------------------------------------------------
+#恢复文件
+  nsExec::Exec "$INSTDIR\bat\RNX1872.bat"
 #-----------------------------------------------------------------------
   Goto end
   no_nx:

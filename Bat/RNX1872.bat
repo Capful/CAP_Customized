@@ -1,14 +1,14 @@
 @echo off
-set NX_Name=NX 12.0
-set NX_Name_A=NX120
+set NX_Name=NX 1872
+set NX_Name_A=NX1872
 set Capful=D:\CAP Customized
 set CAP_Template=%Capful%\NX Template\
 set CAP_Post=%Capful%\Postprocessor\
 set Backup=%Capful%\Backup\%NX_Name%\
 set Customized=%Capful%\Customized\
 
-if exist "%Capful%\bat\NX12.ini" (	
-	for /f "delims== tokens=1*" %%a in ('type "%Capful%\bat\NX12.ini" ^|findstr /i "NX12"') do  set "NX=%%b"
+if exist "%Capful%\bat\NX1872.ini" (	
+	for /f "delims== tokens=1*" %%a in ('type "%Capful%\bat\NX1872.ini" ^|findstr /i "NX1872"') do  set "NX=%%b"
 	echo --------------------------------------------------
     echo *                                                *
     echo *               %NX_Name%ÒÑ°²×°                    *

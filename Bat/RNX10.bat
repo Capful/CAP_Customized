@@ -35,14 +35,10 @@ echo --------------------------------------------------
 set A=cam_general.opt
 echo .
 if exist "%Backup%%A%" (	
-    echo .
-	echo .移除加工菜单文件
-	echo .
-	del /q "%Meun%%A%"
 	echo .
 	echo .恢复加工菜单文件
 	echo .
-	copy /y "%Backup%%A%" "%Meun%"
+	xcopy "%Backup%%A%" "%Meun%" /c /e /r /y /s
 	echo .
 	echo .移除加工菜单备份文件
 	echo .
@@ -57,14 +53,10 @@ echo --------------------------------------------------
 set B=template_post.dat
 echo .
 if exist "%Backup%%B%" (	
-    echo .
-	echo .移除后处理菜单文件
-	echo .
-	del /q "%Post%%B%"
 	echo .
 	echo .恢复后处理菜单文件
 	echo .
-	copy /y "%Backup%%B%" "%Post%"
+	xcopy "%Backup%%B%" "%Post%" /c /e /r /y /s
 	echo .
 	echo .移除后处理文件
     echo.
@@ -85,14 +77,10 @@ echo --------------------------------------------------
 set C=ugs_model_templates_simpl_chinese.pax
 echo .
 if exist "%Backup%%C%" (	
-    echo .
-	echo .移除系统模板文件
-	echo .
-	del /q "%Template%%C%"
 	echo .
 	echo .恢复系统模板文件
 	echo .
-	copy /y "%Backup%%C%" "%Template%"
+	xcopy "%Backup%%C%" "%Template%" /c /e /r /y /s
 	echo .
 	echo .移除系统模板备份文件
 	echo .
@@ -108,17 +96,10 @@ set D=Local\history.pax
 set D1=nx_Capful_Drafting_Standard_User.dpv
 echo .
 if exist "%Backup%%D%" (
-    echo .
-	echo .移除制图模板文件	
-    del /q "%Local%%D1%"
-    echo .
-	echo .移除用户信息文件
-	echo .
-	del /q "%Local%*.*"
 	echo .
 	echo .恢复用户信息文件
 	echo .
-	copy /y "%Backup%Local\*.*" "%Local%"
+	xcopy "%Backup%Local\*.*" "%Local%" /c /e /r /y /s
 	echo .
 	echo .移除用户信息备份文件
 	echo .
@@ -134,25 +115,22 @@ set F=\UGII\menus\ug_main.men
 set F1=ug_main.men
 echo .
 if exist "%Backup%%F1%" (	
-    echo .
-	echo .移除标题文件
-	echo .
-	del /q "%NX%%F%"
 	echo .
 	echo .恢复标题文件
 	echo .
-	copy /y "%Backup%%F1%" "%NX%%F%"
+	xcopy "%Backup%%F1%" "%NX%%F%" /c /e /r /y /s
 	echo .
 	echo .移除标题备份文件
 	echo .
-	del /q "%Backup%%F1%"
+	del /q "%Backup%ug_main.men"
 	echo .
 ) else (
 	echo .标题备份文件不存在！
 )
 echo --------------------------------------------------
 echo .删除备份文件夹
-rmdir /q /s "%Capful%\Backup"
+rmdir /q /s "%backup%"
+rd "%Capful%\Backup"
 Goto Done
 
 :N
