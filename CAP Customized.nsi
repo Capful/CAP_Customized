@@ -2,7 +2,7 @@
 
 ; 安装程序初始定义常量
 !define PRODUCT_NAME "CAP Customized"
-!define PRODUCT_VERSION "2.2.0726"
+!define PRODUCT_VERSION "2.3.190819"
 !define PRODUCT_PUBLISHER "Capful"
 !define PRODUCT_UNINST_KEY "Software\Microsoft\Windows\CurrentVersion\Uninstall\${PRODUCT_NAME}"
 !define PRODUCT_UNINST_ROOT_KEY "HKLM"
@@ -121,15 +121,15 @@ SectionGroupEnd
 ; ------ SEC_C 设计模块 ------
 SectionGroup /e "设计模块" SEC_C
 
-Section "星创外挂" SEC_C1
-  SetOutPath "$INSTDIR\XcDesignCam"
-  File /r "XcDesignCam\*.*"
-;  File /r "XcDesignCam\ugfonts\*.*"
+;Section "星创外挂" SEC_C1
+ ; SetOutPath "$INSTDIR\XcDesignCam"
+;  File /r "XcDesignCam\*.*"
+  ;File /r "XcDesignCam\ugfonts\*.*"
 ; 添加星创环境变量
-  WriteRegExpandStr HKLM "SYSTEM\CurrentControlSet\Control\Session Manager\Environment" "UGII_USER_DIR" "$INSTDIR\XcDesignCam"
+;  WriteRegExpandStr HKLM "SYSTEM\CurrentControlSet\Control\Session Manager\Environment" "UGII_USER_DIR" "$INSTDIR\XcDesignCam"
 ; 刷新环境变量
-  SendMessage ${HWND_BROADCAST} ${WM_WININICHANGE} 0 "STR:Environment" /TIMEOUT=5000
-SectionEnd
+;  SendMessage ${HWND_BROADCAST} ${WM_WININICHANGE} 0 "STR:Environment" /TIMEOUT=5000
+;SectionEnd
 
 Section "CAD 模板" SEC_C2
   SetOutPath "$INSTDIR\CAD Template"
@@ -459,6 +459,7 @@ Function un.onInit
   Call un.NX11
   Call un.NX12
   Call un.NX1847
+  Call un.NX1872
   Pop $R0
   Pop $R1
 FunctionEnd
